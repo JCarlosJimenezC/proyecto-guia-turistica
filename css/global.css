@@ -1,0 +1,235 @@
+/* ============================================
+   GLOBAL.CSS - Estilos globales de la aplicación
+   Solo contiene: reset, fuentes, variables CSS
+   y layouts globales (no estilos de componentes)
+   ============================================ */
+
+/* === RESET BÁSICO === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-principal);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* === VARIABLES CSS (Paleta de Costa Rica) === */
+:root {
+  /* Colores principales - inspirados en la naturaleza de CR */
+  --color-primario: #0F6E56;        /* Verde selva */
+  --color-primario-claro: #1D9E75;  /* Verde claro */
+  --color-primario-oscuro: #085041; /* Verde oscuro */
+
+  --color-secundario: #BA7517;      /* Ámbar / arena */
+  --color-acento: #D85A30;          /* Coral / atardecer */
+
+  --color-azul-oceano: #185FA5;     /* Azul Caribe */
+  --color-azul-claro: #378ADD;
+
+  /* Neutros */
+  --color-texto: #2C2C2A;
+  --color-texto-suave: #5F5E5A;
+  --color-texto-tenue: #888780;
+  --color-fondo: #FAFAF8;
+  --color-fondo-suave: #F1EFE8;
+  --color-fondo-card: #FFFFFF;
+  --color-borde: #D3D1C7;
+  --color-borde-claro: #E8E6DD;
+
+  /* Tipografía */
+  --font-principal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    "Helvetica Neue", Arial, sans-serif;
+  --font-titulos: var(--font-principal);
+
+  /* Espaciado */
+  --espacio-xs: 0.25rem;
+  --espacio-sm: 0.5rem;
+  --espacio-md: 1rem;
+  --espacio-lg: 1.5rem;
+  --espacio-xl: 2rem;
+  --espacio-xxl: 3rem;
+
+  /* Bordes y sombras */
+  --radio-sm: 4px;
+  --radio-md: 8px;
+  --radio-lg: 12px;
+  --radio-xl: 16px;
+
+  --sombra-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --sombra-md: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --sombra-lg: 0 4px 16px rgba(0, 0, 0, 0.12);
+
+  /* Transiciones */
+  --transicion-rapida: 0.15s ease;
+  --transicion-normal: 0.25s ease;
+  --transicion-lenta: 0.4s ease;
+
+  /* Layout */
+  --max-ancho: 1200px;
+  --altura-header: 70px;
+}
+
+/* === LAYOUT PRINCIPAL === */
+main#app {
+  flex: 1;
+  width: 100%;
+  padding-top: var(--espacio-xl);
+  padding-bottom: var(--espacio-xl);
+}
+
+.contenedor {
+  max-width: var(--max-ancho);
+  margin: 0 auto;
+  padding: 0 var(--espacio-lg);
+}
+
+/* === SISTEMA DE VISTAS === */
+.vista {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.vista.activa {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === TÍTULO DE REGIÓN === */
+#titulo-region {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primario-oscuro);
+  margin-bottom: var(--espacio-lg);
+  padding-bottom: var(--espacio-sm);
+  border-bottom: 3px solid var(--color-primario);
+  display: inline-block;
+}
+
+/* === GRID DE DESTINOS === */
+.grid-destinos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--espacio-lg);
+  margin-top: var(--espacio-lg);
+}
+
+/* === BOTÓN VOLVER === */
+.btn-volver {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espacio-xs);
+  padding: var(--espacio-sm) var(--espacio-md);
+  background-color: var(--color-fondo-card);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-md);
+  color: var(--color-texto);
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: var(--espacio-lg);
+  transition: all var(--transicion-rapida);
+}
+
+.btn-volver:hover {
+  background-color: var(--color-primario);
+  color: white;
+  border-color: var(--color-primario);
+}
+
+/* === FOOTER === */
+.app-footer {
+  background-color: var(--color-primario-oscuro);
+  color: white;
+  text-align: center;
+  padding: var(--espacio-lg);
+  margin-top: var(--espacio-xxl);
+}
+
+.app-footer p {
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+/* === MENSAJES DE ERROR === */
+.error {
+  text-align: center;
+  padding: var(--espacio-xl);
+  color: var(--color-acento);
+  font-weight: 500;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  :root {
+    --espacio-lg: 1rem;
+    --espacio-xl: 1.5rem;
+  }
+
+  #titulo-region {
+    font-size: 1.5rem;
+  }
+
+  .grid-destinos {
+    grid-template-columns: 1fr;
+    gap: var(--espacio-md);
+  }
+}
+
+/* === ACCESIBILIDAD === */
+:focus-visible {
+  outline: 2px solid var(--color-primario);
+  outline-offset: 2px;
+}
+
+/* Respeta preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
