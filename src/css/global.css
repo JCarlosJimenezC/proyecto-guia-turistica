@@ -233,3 +233,150 @@ main#app {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* ============================================
+   ADICIONES — no modifican nada de lo anterior
+   ============================================ */
+
+/* === DARK MODE === */
+/* Solo redefine variables; el resto del CSS las toma automáticamente */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primario: #1D9E75;
+    --color-primario-claro: #2DC98F;
+    --color-primario-oscuro: #0F6E56;
+
+    --color-texto: #EDECEA;
+    --color-texto-suave: #B0AEA8;
+    --color-texto-tenue: #7A7874;
+
+    --color-fondo: #151513;
+    --color-fondo-suave: #1E1E1B;
+    --color-fondo-card: #242420;
+
+    --color-borde: #3A3935;
+    --color-borde-claro: #2E2D29;
+
+    --sombra-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --sombra-md: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --sombra-lg: 0 4px 16px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* === BREAKPOINT TABLET (769px – 1024px) === */
+/* Cubre el rango que faltaba entre mobile y desktop */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-destinos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contenedor {
+    padding: 0 var(--espacio-xl);
+  }
+
+  #titulo-region {
+    font-size: 1.75rem;
+  }
+}
+
+/* === SKELETON LOADER === */
+/* Para usar mientras los destinos cargan desde fetch().
+   JS: insertar <div class="skeleton skeleton-card"></div> en el grid
+   antes de que lleguen los datos, luego reemplazar con las cards reales. */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-borde-claro) 25%,
+    var(--color-fondo-suave) 50%,
+    var(--color-borde-claro) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease infinite;
+  border-radius: var(--radio-md);
+}
+
+.skeleton-card {
+  height: 280px;
+  width: 100%;
+}
+
+.skeleton-text {
+  height: 1rem;
+  width: 70%;
+  margin-bottom: var(--espacio-sm);
+}
+
+.skeleton-text--corto {
+  width: 40%;
+}
+
+@keyframes skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* === ACCESIBILIDAD — UTILIDADES === */
+
+/* Oculta visualmente pero lo mantiene para lectores de pantalla.
+   Para usar en labels de controles de audio-guia y galeria-imagenes. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Vuelve visible al recibir foco (útil para skip-links) */
+.sr-only:focus-visible {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* === SCROLL PERSONALIZADO === */
+@supports (scrollbar-color: auto) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primario-claro) var(--color-fondo-suave);
+  }
+}
+
+@supports selector(::-webkit-scrollbar) {
+  ::-webkit-scrollbar        { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track  { background: var(--color-fondo-suave); }
+  ::-webkit-scrollbar-thumb  {
+    background-color: var(--color-primario-claro);
+    border-radius: 99px;
+  }
+}
+
+/* === ESTADO DE CARGA GLOBAL === */
+/* Añadir body.cargando en JS durante el fetch inicial, remover al terminar */
+body.cargando {
+  cursor: wait;
+  pointer-events: none;
+}
+
+/* === UTILIDAD: TEXTO TRUNCADO === */
+/* Útil para nombres largos de destinos en las cards */
+.truncar {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.truncar-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
