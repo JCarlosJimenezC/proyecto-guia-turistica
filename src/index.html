@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Guía Turística Multimedia de Costa Rica - Explora destinos turísticos del país">
+  <meta name="description" content="Guía Turística Multimedia de Costa Rica - Explora destinos turísticos del país a través de imágenes, audio y video">
+  <meta name="author" content="Grupo IF7102 - UCR Sede Guanacaste">
+  <meta name="theme-color" content="#0F6E56">
   <title>Guía Turística de Costa Rica</title>
 
   <!-- Estilos globales (reset, fuentes, variables) -->
@@ -19,26 +21,31 @@
 </head>
 <body>
 
+  <!-- Skip link para accesibilidad (navegación por teclado) -->
+  <a href="#vista-listado" class="sr-only">Saltar al contenido principal</a>
+
   <!-- Header con navegación por regiones -->
   <app-header active-region="Chorotega"></app-header>
 
   <!-- Contenedor principal de la aplicación -->
-  <main id="app">
+  <main id="app" role="main">
 
     <!-- Vista de listado: aquí se renderizan las destino-cards -->
-    <section id="vista-listado" class="vista activa">
+    <section id="vista-listado" class="vista activa" aria-label="Listado de destinos">
       <div class="contenedor">
-        <h2 id="titulo-region">Pacífico Norte</h2>
-        <div id="grid-destinos" class="grid-destinos">
+        <h2 id="titulo-region">Cargando destinos...</h2>
+        <div id="grid-destinos" class="grid-destinos" aria-live="polite">
           <!-- Las destino-cards se generan dinámicamente desde JS -->
         </div>
       </div>
     </section>
 
     <!-- Vista de detalle: se muestra al seleccionar un destino -->
-    <section id="vista-detalle" class="vista">
+    <section id="vista-detalle" class="vista" aria-label="Detalle del destino">
       <div class="contenedor">
-        <button id="btn-volver" class="btn-volver">← Volver</button>
+        <button id="btn-volver" class="btn-volver" aria-label="Volver al listado de destinos">
+          ← Volver al listado
+        </button>
         <!-- El destino-detalle se inserta dinámicamente aquí -->
         <div id="contenedor-detalle"></div>
       </div>
@@ -47,17 +54,26 @@
   </main>
 
   <!-- Footer simple -->
-  <footer class="app-footer">
+  <footer class="app-footer" role="contentinfo">
     <p>Guía Turística de Costa Rica · Proyecto IF7102 · UCR Sede Guanacaste 2026</p>
   </footer>
 
+  <!-- Fallback si JavaScript está deshabilitado -->
+  <noscript>
+    <div style="padding: 2rem; text-align: center; background: #FAECE7; color: #712B13;">
+      <p>Esta aplicación requiere JavaScript habilitado para funcionar correctamente.</p>
+    </div>
+  </noscript>
+
   <!-- Lógica principal de la aplicación -->
   <script type="module">
-    // Estado global de la aplicación
+    "use strict";
+
+    // ===== ESTADO GLOBAL =====
     let destinos = [];
     let regionActiva = "Chorotega";
 
-    // Referencias a elementos del DOM
+    // ===== REFERENCIAS AL DOM =====
     const gridDestinos = document.getElementById("grid-destinos");
     const tituloRegion = document.getElementById("titulo-region");
     const vistaListado = document.getElementById("vista-listado");
@@ -65,36 +81,60 @@
     const contenedorDetalle = document.getElementById("contenedor-detalle");
     const btnVolver = document.getElementById("btn-volver");
 
-    // Mapeo de regiones técnicas a nombres turísticos
+    // ===== MAPEO DE REGIONES =====
+    // Nombres oficiales de Costa Rica (MIDEPLAN) → nombres turísticos amigables
     const nombresRegion = {
-      "Chorotega": "Pacífico Norte",
+      "Chorotega": "Pacífico Norte (Guanacaste)",
       "Huetar Atlántica": "Caribe",
       "Central": "Valle Central",
       "Pacífico Central": "Pacífico Central",
       "Brunca": "Pacífico Sur"
     };
 
-    // Cargar datos del JSON
+    // ===== CARGA DE DATOS =====
     async function cargarDestinos() {
+      document.body.classList.add("cargando");
+      mostrarSkeletons();
+
       try {
         const respuesta = await fetch("./data/destinos.json");
-        if (!respuesta.ok) throw new Error("No se pudo cargar el JSON");
+        if (!respuesta.ok) {
+          throw new Error(`HTTP ${respuesta.status}: No se pudo cargar el JSON`);
+        }
         const datos = await respuesta.json();
         destinos = datos.destinos;
         renderizarDestinos(regionActiva);
       } catch (error) {
         console.error("Error al cargar destinos:", error);
-        gridDestinos.innerHTML = "<p class='error'>Error al cargar los destinos.</p>";
+        gridDestinos.innerHTML = `
+          <p class="error" role="alert">
+            No se pudieron cargar los destinos. Por favor, recargue la página.
+          </p>
+        `;
+        tituloRegion.textContent = "Error";
+      } finally {
+        document.body.classList.remove("cargando");
       }
     }
 
-    // Renderiza las destino-cards filtradas por región
+    // ===== RENDERIZADO =====
     function renderizarDestinos(region) {
       gridDestinos.innerHTML = "";
       tituloRegion.textContent = nombresRegion[region] || region;
 
       const destinosFiltrados = destinos.filter(d => d.region === region);
 
+      // Manejo de estado vacío
+      if (destinosFiltrados.length === 0) {
+        gridDestinos.innerHTML = `
+          <p class="estado-vacio">
+            No hay destinos disponibles para esta región todavía.
+          </p>
+        `;
+        return;
+      }
+
+      // Crear y agregar cada destino-card
       destinosFiltrados.forEach(destino => {
         const card = document.createElement("destino-card");
         card.setAttribute("destino-id", destino.id);
@@ -105,10 +145,22 @@
       });
     }
 
-    // Muestra la vista de detalle de un destino
+    // Skeleton loaders mientras carga
+    function mostrarSkeletons() {
+      gridDestinos.innerHTML = `
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card"></div>
+      `;
+    }
+
+    // ===== NAVEGACIÓN ENTRE VISTAS =====
     function mostrarDetalle(destinoId) {
       const destino = destinos.find(d => d.id === destinoId);
-      if (!destino) return;
+      if (!destino) {
+        console.warn(`Destino con ID "${destinoId}" no encontrado`);
+        return;
+      }
 
       contenedorDetalle.innerHTML = "";
       const detalle = document.createElement("destino-detalle");
@@ -120,27 +172,26 @@
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-    // Volver al listado
     function volverAListado() {
       vistaDetalle.classList.remove("activa");
       vistaListado.classList.add("activa");
     }
 
-    // Eventos
+    // ===== EVENTOS =====
     btnVolver.addEventListener("click", volverAListado);
 
-    // Escuchar el evento del app-header
+    // CustomEvent emitido por <app-header>
     document.addEventListener("region-selected", (ev) => {
       regionActiva = ev.detail.region;
       renderizarDestinos(regionActiva);
     });
 
-    // Escuchar el evento de las destino-cards
+    // CustomEvent emitido por <destino-card>
     document.addEventListener("destino-selected", (ev) => {
       mostrarDetalle(ev.detail.id);
     });
 
-    // Inicializar la aplicación
+    // ===== INICIALIZACIÓN =====
     cargarDestinos();
   </script>
 

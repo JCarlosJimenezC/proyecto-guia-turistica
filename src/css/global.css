@@ -380,3 +380,14 @@ body.cargando {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* === ESTADO VACÍO === */
+.estado-vacio {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--espacio-xxl) var(--espacio-md);
+  color: var(--color-texto-suave);
+  font-style: italic;
+  background-color: var(--color-fondo-suave);
+  border-radius: var(--radio-md);
+}
