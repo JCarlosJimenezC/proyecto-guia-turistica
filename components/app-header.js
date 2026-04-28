@@ -34,11 +34,12 @@ class AppHeader extends HTMLElement {
     // 'region' = identificador interno (coincide con el JSON)
     // 'label'  = nombre amigable que ve el usuario
     this.regiones = [
-      { region: "Chorotega",        label: "Guanacaste" },
-      { region: "Huetar Atlántica", label: "Caribe" },
-      { region: "Central",          label: "Valle Central" },
+      { region: "Chorotega",        label: "Chorotega" },
+      { region: "Huetar Norte",     label: "Huetar Norte" },
+      { region: "Huetar Atlántica", label: "Huetar Atlántica" },
+      { region: "Central",          label: "Central" },
       { region: "Pacífico Central", label: "Pacífico Central" },
-      { region: "Brunca",           label: "Pacífico Sur" }
+      { region: "Brunca",           label: "Brunca" }
     ];
   }
 

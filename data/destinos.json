@@ -43,46 +43,46 @@
       "lng": -85.3242
     },
     {
-      "id": "huetar-atlantica-001",
-      "nombre": "Cahuita",
-      "region": "Huetar Atlántica",
-      "zona_turistica": "Caribe",
-      "provincia": "Limón",
-      "canton": "Talamanca",
-      "descripcion": "Cahuita es un pueblo costero del Caribe sur con una atmósfera tranquila y auténtica. Su Parque Nacional protege uno de los pocos arrecifes de coral del país, ideal para snorkel. La cultura afrocostarricense se vive en su gastronomía, música y tradiciones, ofreciendo una experiencia cultural única en el país.",
-      "imagen_portada": "assets/img/cahuita.webp",
+      "id": "huetar-norte-001",
+      "nombre": "La Fortuna y Volcán Arenal",
+      "region": "Huetar Norte",
+      "zona_turistica": "Llanuras del Norte",
+      "provincia": "Alajuela",
+      "canton": "San Carlos",
+      "descripcion": "La Fortuna es uno de los destinos turísticos más visitados de Costa Rica, dominado por la imponente silueta del Volcán Arenal de 1670 metros de altura. La zona ofrece aguas termales naturales, cataratas como la famosa La Fortuna, puentes colgantes en bosque lluvioso, tirolinas y senderos en parques nacionales. Es el lugar ideal para combinar aventura, naturaleza y relajación en un mismo viaje.",
+      "imagen_portada": "assets/img/la-fortuna.webp",
       "galeria": [
-        "assets/img/cahuita-1.webp",
-        "assets/img/cahuita-2.webp",
-        "assets/img/cahuita-3.webp",
-        "assets/img/cahuita-4.webp"
+        "assets/img/la-fortuna-1.webp",
+        "assets/img/la-fortuna-2.webp",
+        "assets/img/la-fortuna-3.webp",
+        "assets/img/la-fortuna-4.webp"
       ],
-      "audio": "assets/audio/cahuita-guia.mp3",
-      "video": "assets/video/cahuita.mp4",
-      "actividades": ["Snorkel", "Senderismo", "Avistamiento de fauna", "Cultura afrocaribeña"],
-      "lat": 9.7369,
-      "lng": -82.8411
+      "audio": "assets/audio/la-fortuna-guia.mp3",
+      "video": "assets/video/la-fortuna.mp4",
+      "actividades": ["Aguas termales", "Tirolina", "Senderismo", "Cataratas", "Puentes colgantes"],
+      "lat": 10.4669,
+      "lng": -84.6431
     },
     {
-      "id": "huetar-atlantica-002",
-      "nombre": "Puerto Viejo de Talamanca",
-      "region": "Huetar Atlántica",
-      "zona_turistica": "Caribe",
-      "provincia": "Limón",
-      "canton": "Talamanca",
-      "descripcion": "Puerto Viejo es un destino vibrante del Caribe sur conocido por su ambiente bohemio, playas de arena dorada y reggae al atardecer. Es famoso por la ola Salsa Brava, una de las más desafiantes del país. Su gastronomía caribeña con sabores como el rice and beans con leche de coco lo hacen inolvidable.",
-      "imagen_portada": "assets/img/puerto-viejo.webp",
+      "id": "huetar-norte-002",
+      "nombre": "Caño Negro",
+      "region": "Huetar Norte",
+      "zona_turistica": "Llanuras del Norte",
+      "provincia": "Alajuela",
+      "canton": "Los Chiles",
+      "descripcion": "El Refugio Nacional de Vida Silvestre Caño Negro es un humedal de importancia internacional, reconocido como sitio Ramsar. Sus lagunas y ríos albergan una extraordinaria diversidad de aves migratorias, caimanes, monos y peces gaspar, considerados fósiles vivientes. Los recorridos en bote ofrecen experiencias únicas de observación de fauna en un entorno casi virgen, ideal para fotógrafos y amantes de la naturaleza.",
+      "imagen_portada": "assets/img/cano-negro.webp",
       "galeria": [
-        "assets/img/puerto-viejo-1.webp",
-        "assets/img/puerto-viejo-2.webp",
-        "assets/img/puerto-viejo-3.webp",
-        "assets/img/puerto-viejo-4.webp"
+        "assets/img/cano-negro-1.webp",
+        "assets/img/cano-negro-2.webp",
+        "assets/img/cano-negro-3.webp",
+        "assets/img/cano-negro-4.webp"
       ],
-      "audio": "assets/audio/puerto-viejo-guia.mp3",
-      "video": "assets/video/puerto-viejo.mp4",
-      "actividades": ["Surf", "Ciclismo", "Vida nocturna", "Gastronomía caribeña"],
-      "lat": 9.6553,
-      "lng": -82.7548
+      "audio": "assets/audio/cano-negro-guia.mp3",
+      "video": "assets/video/cano-negro.mp4",
+      "actividades": ["Tour en bote", "Avistamiento de aves", "Pesca deportiva", "Fotografía de naturaleza"],
+      "lat": 10.8953,
+      "lng": -84.7869
     },
     {
       "id": "central-001",
@@ -127,6 +127,48 @@
       "lng": -83.8503
     },
     {
+      "id": "huetar-atlantica-001",
+      "nombre": "Cahuita",
+      "region": "Huetar Atlántica",
+      "zona_turistica": "Caribe",
+      "provincia": "Limón",
+      "canton": "Talamanca",
+      "descripcion": "Cahuita es un pueblo costero del Caribe sur con una atmósfera tranquila y auténtica. Su Parque Nacional protege uno de los pocos arrecifes de coral del país, ideal para snorkel. La cultura afrocostarricense se vive en su gastronomía, música y tradiciones, ofreciendo una experiencia cultural única en el país.",
+      "imagen_portada": "assets/img/cahuita.webp",
+      "galeria": [
+        "assets/img/cahuita-1.webp",
+        "assets/img/cahuita-2.webp",
+        "assets/img/cahuita-3.webp",
+        "assets/img/cahuita-4.webp"
+      ],
+      "audio": "assets/audio/cahuita-guia.mp3",
+      "video": "assets/video/cahuita.mp4",
+      "actividades": ["Snorkel", "Senderismo", "Avistamiento de fauna", "Cultura afrocaribeña"],
+      "lat": 9.7369,
+      "lng": -82.8411
+    },
+    {
+      "id": "huetar-atlantica-002",
+      "nombre": "Puerto Viejo de Talamanca",
+      "region": "Huetar Atlántica",
+      "zona_turistica": "Caribe",
+      "provincia": "Limón",
+      "canton": "Talamanca",
+      "descripcion": "Puerto Viejo es un destino vibrante del Caribe sur conocido por su ambiente bohemio, playas de arena dorada y reggae al atardecer. Es famoso por la ola Salsa Brava, una de las más desafiantes del país. Su gastronomía caribeña con sabores como el rice and beans con leche de coco lo hacen inolvidable.",
+      "imagen_portada": "assets/img/puerto-viejo.webp",
+      "galeria": [
+        "assets/img/puerto-viejo-1.webp",
+        "assets/img/puerto-viejo-2.webp",
+        "assets/img/puerto-viejo-3.webp",
+        "assets/img/puerto-viejo-4.webp"
+      ],
+      "audio": "assets/audio/puerto-viejo-guia.mp3",
+      "video": "assets/video/puerto-viejo.mp4",
+      "actividades": ["Surf", "Ciclismo", "Vida nocturna", "Gastronomía caribeña"],
+      "lat": 9.6553,
+      "lng": -82.7548
+    },
+    {
       "id": "pacifico-central-001",
       "nombre": "Manuel Antonio",
       "region": "Pacífico Central",
@@ -148,6 +190,27 @@
       "lng": -84.1370
     },
     {
+      "id": "pacifico-central-002",
+      "nombre": "Jacó",
+      "region": "Pacífico Central",
+      "zona_turistica": "Pacífico Central",
+      "provincia": "Puntarenas",
+      "canton": "Garabito",
+      "descripcion": "Jacó es la playa más visitada del Pacífico Central, conocida por su ambiente animado, su cercanía con San José y su excelente oferta para el surf en todos los niveles. Combina playas de arena oscura, vida nocturna vibrante, gastronomía variada y actividades como tirolinas, paseos a caballo y avistamiento de cocodrilos en el cercano río Tárcoles. Es el destino ideal para quienes buscan playa, aventura y vida social.",
+      "imagen_portada": "assets/img/jaco.webp",
+      "galeria": [
+        "assets/img/jaco-1.webp",
+        "assets/img/jaco-2.webp",
+        "assets/img/jaco-3.webp",
+        "assets/img/jaco-4.webp"
+      ],
+      "audio": "assets/audio/jaco-guia.mp3",
+      "video": "assets/video/jaco.mp4",
+      "actividades": ["Surf", "Vida nocturna", "Tirolina", "Cabalgata", "Avistamiento de cocodrilos"],
+      "lat": 9.6147,
+      "lng": -84.6286
+    },
+    {
       "id": "brunca-001",
       "nombre": "Uvita",
       "region": "Brunca",
@@ -167,6 +230,27 @@
       "actividades": ["Avistamiento de ballenas", "Snorkel", "Senderismo", "Surf"],
       "lat": 9.1606,
       "lng": -83.7414
+    },
+    {
+      "id": "brunca-002",
+      "nombre": "Bahía Drake y Corcovado",
+      "region": "Brunca",
+      "zona_turistica": "Pacífico Sur",
+      "provincia": "Puntarenas",
+      "canton": "Osa",
+      "descripcion": "Bahía Drake es la principal puerta de entrada al Parque Nacional Corcovado, considerado por National Geographic como uno de los lugares biológicamente más intensos del planeta. La península de Osa concentra el 2.5% de la biodiversidad mundial en menos del 0.001% de la superficie terrestre. Es el hogar de jaguares, dantas, monos araña, guacamayas escarlata y delfines, ofreciendo una experiencia de naturaleza salvaje incomparable.",
+      "imagen_portada": "assets/img/drake.webp",
+      "galeria": [
+        "assets/img/drake-1.webp",
+        "assets/img/drake-2.webp",
+        "assets/img/drake-3.webp",
+        "assets/img/drake-4.webp"
+      ],
+      "audio": "assets/audio/drake-guia.mp3",
+      "video": "assets/video/drake.mp4",
+      "actividades": ["Senderismo en selva", "Avistamiento de fauna", "Snorkel", "Tours en bote", "Buceo"],
+      "lat": 8.6953,
+      "lng": -83.6708
     }
   ]
 }
