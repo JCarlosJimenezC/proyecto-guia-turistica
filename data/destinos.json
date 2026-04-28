@@ -8,12 +8,12 @@
       "provincia": "Guanacaste",
       "canton": "Santa Cruz",
       "descripcion": "Tamarindo es una playa de fama internacional ubicada en la costa pacífica de Guanacaste. Reconocida mundialmente por sus condiciones ideales para el surf, ofrece atardeceres espectaculares, una vibrante vida nocturna y aguas cálidas durante todo el año. Es un destino perfecto para quienes buscan combinar deporte, naturaleza y cultura local.",
-      "imagen_portada": "assets/img/tamarindo.jpg",
+      "imagen_portada": "assets/img/tamarindo.webp",
       "galeria": [
-        "assets/img/tamarindo-1.jpg",
-        "assets/img/tamarindo-2.jpg",
-        "assets/img/tamarindo-3.jpg",
-        "assets/img/tamarindo-4.jpg"
+        "assets/img/tamarindo-1.webp",
+        "assets/img/tamarindo-2.webp",
+        "assets/img/tamarindo-3.webp",
+        "assets/img/tamarindo-4.webp"
       ],
       "audio": "assets/audio/tamarindo-guia.mp3",
       "video": "assets/video/tamarindo.mp4",
@@ -29,11 +29,12 @@
       "provincia": "Guanacaste",
       "canton": "Liberia",
       "descripcion": "El Parque Nacional Rincón de la Vieja alberga uno de los volcanes más activos del país. Ofrece una experiencia única con aguas termales, fumarolas, pailas de barro hirviente, cataratas y senderos que atraviesan bosque seco tropical. Es un destino imprescindible para los amantes del ecoturismo y la aventura.",
-      "imagen_portada": "assets/img/rincon-vieja.jpg",
+      "imagen_portada": "assets/img/rincon-vieja.webp",
       "galeria": [
-        "assets/img/rincon-vieja-1.jpg",
-        "assets/img/rincon-vieja-2.jpg",
-        "assets/img/rincon-vieja-3.jpg"
+        "assets/img/rincon-vieja-1.webp",
+        "assets/img/rincon-vieja-2.webp",
+        "assets/img/rincon-vieja-3.webp",
+        "assets/img/rincon-vieja-4.webp"
       ],
       "audio": "assets/audio/rincon-vieja-guia.mp3",
       "video": "assets/video/rincon-vieja.mp4",
@@ -49,11 +50,12 @@
       "provincia": "Limón",
       "canton": "Talamanca",
       "descripcion": "Cahuita es un pueblo costero del Caribe sur con una atmósfera tranquila y auténtica. Su Parque Nacional protege uno de los pocos arrecifes de coral del país, ideal para snorkel. La cultura afrocostarricense se vive en su gastronomía, música y tradiciones, ofreciendo una experiencia cultural única en el país.",
-      "imagen_portada": "assets/img/cahuita.jpg",
+      "imagen_portada": "assets/img/cahuita.webp",
       "galeria": [
-        "assets/img/cahuita-1.jpg",
-        "assets/img/cahuita-2.jpg",
-        "assets/img/cahuita-3.jpg"
+        "assets/img/cahuita-1.webp",
+        "assets/img/cahuita-2.webp",
+        "assets/img/cahuita-3.webp",
+        "assets/img/cahuita-4.webp"
       ],
       "audio": "assets/audio/cahuita-guia.mp3",
       "video": "assets/video/cahuita.mp4",
@@ -69,11 +71,12 @@
       "provincia": "Limón",
       "canton": "Talamanca",
       "descripcion": "Puerto Viejo es un destino vibrante del Caribe sur conocido por su ambiente bohemio, playas de arena dorada y reggae al atardecer. Es famoso por la ola Salsa Brava, una de las más desafiantes del país. Su gastronomía caribeña con sabores como el rice and beans con leche de coco lo hacen inolvidable.",
-      "imagen_portada": "assets/img/puerto-viejo.jpg",
+      "imagen_portada": "assets/img/puerto-viejo.webp",
       "galeria": [
-        "assets/img/puerto-viejo-1.jpg",
-        "assets/img/puerto-viejo-2.jpg",
-        "assets/img/puerto-viejo-3.jpg"
+        "assets/img/puerto-viejo-1.webp",
+        "assets/img/puerto-viejo-2.webp",
+        "assets/img/puerto-viejo-3.webp",
+        "assets/img/puerto-viejo-4.webp"
       ],
       "audio": "assets/audio/puerto-viejo-guia.mp3",
       "video": "assets/video/puerto-viejo.mp4",
@@ -89,11 +92,12 @@
       "provincia": "Alajuela",
       "canton": "Poás",
       "descripcion": "El Parque Nacional Volcán Poás es uno de los más visitados del país. Su cráter principal de 1.3 km de diámetro alberga una laguna ácida color turquesa y es uno de los más grandes del mundo. A 2708 metros sobre el nivel del mar, ofrece bosque nuboso, senderos accesibles y vistas espectaculares en días despejados.",
-      "imagen_portada": "assets/img/poas.jpg",
+      "imagen_portada": "assets/img/poas.webp",
       "galeria": [
-        "assets/img/poas-1.jpg",
-        "assets/img/poas-2.jpg",
-        "assets/img/poas-3.jpg"
+        "assets/img/poas-1.webp",
+        "assets/img/poas-2.webp",
+        "assets/img/poas-3.webp",
+        "assets/img/poas-4.webp"
       ],
       "audio": "assets/audio/poas-guia.mp3",
       "video": "assets/video/poas.mp4",
@@ -109,11 +113,12 @@
       "provincia": "Cartago",
       "canton": "Paraíso",
       "descripcion": "El Valle de Orosi es uno de los paisajes más pintorescos del Valle Central. Famoso por sus extensos cafetales, su iglesia colonial de 1743 (la más antigua en uso del país) y sus aguas termales naturales. Ideal para tours de café, ciclismo de montaña y para conocer la herencia cultural costarricense.",
-      "imagen_portada": "assets/img/orosi.jpg",
+      "imagen_portada": "assets/img/orosi.webp",
       "galeria": [
-        "assets/img/orosi-1.jpg",
-        "assets/img/orosi-2.jpg",
-        "assets/img/orosi-3.jpg"
+        "assets/img/orosi-1.webp",
+        "assets/img/orosi-2.webp",
+        "assets/img/orosi-3.webp",
+        "assets/img/orosi-4.webp"
       ],
       "audio": "assets/audio/orosi-guia.mp3",
       "video": "assets/video/orosi.mp4",
@@ -129,12 +134,12 @@
       "provincia": "Puntarenas",
       "canton": "Quepos",
       "descripcion": "El Parque Nacional Manuel Antonio combina playas de arena blanca con bosque tropical en uno de los espacios más fotografiados del país. A pesar de ser el parque más pequeño, alberga una biodiversidad impresionante: monos cariblancos, perezosos, mapaches y más de 350 especies de aves conviven con los visitantes en sus senderos.",
-      "imagen_portada": "assets/img/manuel-antonio.jpg",
+      "imagen_portada": "assets/img/manuel-antonio.webp",
       "galeria": [
-        "assets/img/manuel-antonio-1.jpg",
-        "assets/img/manuel-antonio-2.jpg",
-        "assets/img/manuel-antonio-3.jpg",
-        "assets/img/manuel-antonio-4.jpg"
+        "assets/img/manuel-antonio-1.webp",
+        "assets/img/manuel-antonio-2.webp",
+        "assets/img/manuel-antonio-3.webp",
+        "assets/img/manuel-antonio-4.webp"
       ],
       "audio": "assets/audio/manuel-antonio-guia.mp3",
       "video": "assets/video/manuel-antonio.mp4",
@@ -150,11 +155,12 @@
       "provincia": "Puntarenas",
       "canton": "Osa",
       "descripcion": "Uvita es la puerta de entrada al Parque Nacional Marino Ballena, famoso por su formación natural en forma de cola de ballena visible en marea baja. Es uno de los mejores lugares del mundo para el avistamiento de ballenas jorobadas, que llegan dos veces al año. Su ambiente tranquilo lo hace ideal para conectar con la naturaleza.",
-      "imagen_portada": "assets/img/uvita.jpg",
+      "imagen_portada": "assets/img/uvita.webp",
       "galeria": [
-        "assets/img/uvita-1.jpg",
-        "assets/img/uvita-2.jpg",
-        "assets/img/uvita-3.jpg"
+        "assets/img/uvita-1.webp",
+        "assets/img/uvita-2.webp",
+        "assets/img/uvita-3.webp",
+        "assets/img/uvita-4.webp"
       ],
       "audio": "assets/audio/uvita-guia.mp3",
       "video": "assets/video/uvita.mp4",
