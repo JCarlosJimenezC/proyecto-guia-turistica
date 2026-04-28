@@ -106,7 +106,12 @@ class AppHeader extends HTMLElement {
         }
 
         .logo-icono {
-          font-size: 1.5rem;
+          height: 42px;
+          width: 42px;
+          object-fit: contain;
+          mix-blend-mode: screen;
+          border-radius: 6px;
+          flex-shrink: 0;
         }
 
         /* === NAVEGACIÓN DE REGIONES === */
@@ -203,7 +208,7 @@ class AppHeader extends HTMLElement {
 
           <!-- Logo y nombre de la guía -->
           <div class="logo">
-            <span class="logo-icono" aria-hidden="true">🌴</span>
+            <img class="logo-icono" src="assets/img/Logo.png" alt="Logo Guía Turística CR">
             <span>Guía Turística CR</span>
           </div>
 
