@@ -1,13 +1,138 @@
 {
-  "svgPath": "assets/img/costa-rica.svg",
+  "svgPath": "assets/img/Cantones_de_Costa_Rica.svg",
   "viewBox": "0 0 648.29871 612.98956",
-  "provincias": [
-    { "id": "CR-SJ", "nombre": "San José",   "region": "Central" },
-    { "id": "CR-A",  "nombre": "Alajuela",   "region": "Central" },
-    { "id": "CR-C",  "nombre": "Cartago",    "region": "Central" },
-    { "id": "CR-H",  "nombre": "Heredia",    "region": "Central" },
-    { "id": "CR-G",  "nombre": "Guanacaste", "region": "Chorotega" },
-    { "id": "CR-P",  "nombre": "Puntarenas", "region": "Pacífico Central" },
-    { "id": "CR-L",  "nombre": "Limón",      "region": "Huetar Atlántica" }
+  "regiones": [
+    {
+      "id": "central",
+      "nombre": "Central",
+      "color": "#3B82F6",
+      "descripcion": "Comprende el Valle Central y zonas montañosas aledañas. Es la región más poblada del país e incluye atractivos como el Volcán Poás y el Valle de Orosi.",
+      "cantones": [
+        { "id": "101", "nombre": "San José", "provincia": "San José" },
+        { "id": "102", "nombre": "Escazú", "provincia": "San José" },
+        { "id": "103", "nombre": "Desamparados", "provincia": "San José" },
+        { "id": "104", "nombre": "Puriscal", "provincia": "San José" },
+        { "id": "105", "nombre": "Tarrazú", "provincia": "San José" },
+        { "id": "106", "nombre": "Aserrí", "provincia": "San José" },
+        { "id": "107", "nombre": "Mora", "provincia": "San José" },
+        { "id": "108", "nombre": "Goicoechea", "provincia": "San José" },
+        { "id": "109", "nombre": "Santa Ana", "provincia": "San José" },
+        { "id": "110", "nombre": "Alajuelita", "provincia": "San José" },
+        { "id": "111", "nombre": "Vázquez de Coronado", "provincia": "San José" },
+        { "id": "112", "nombre": "Acosta", "provincia": "San José" },
+        { "id": "113", "nombre": "Tibás", "provincia": "San José" },
+        { "id": "114", "nombre": "Moravia", "provincia": "San José" },
+        { "id": "115", "nombre": "Montes de Oca", "provincia": "San José" },
+        { "id": "116", "nombre": "Turrubares", "provincia": "San José" },
+        { "id": "117", "nombre": "Dota", "provincia": "San José" },
+        { "id": "118", "nombre": "Curridabat", "provincia": "San José" },
+        { "id": "120", "nombre": "León Cortés Castro", "provincia": "San José" },
+        { "id": "201", "nombre": "Alajuela", "provincia": "Alajuela" },
+        { "id": "202", "nombre": "San Ramón", "provincia": "Alajuela" },
+        { "id": "203", "nombre": "Grecia", "provincia": "Alajuela" },
+        { "id": "205", "nombre": "Atenas", "provincia": "Alajuela" },
+        { "id": "206", "nombre": "Naranjo", "provincia": "Alajuela" },
+        { "id": "207", "nombre": "Palmares", "provincia": "Alajuela" },
+        { "id": "208", "nombre": "Poás", "provincia": "Alajuela" },
+        { "id": "211", "nombre": "Zarcero", "provincia": "Alajuela" },
+        { "id": "212", "nombre": "Sarchí", "provincia": "Alajuela" },
+        { "id": "301", "nombre": "Cartago", "provincia": "Cartago" },
+        { "id": "302", "nombre": "Paraíso", "provincia": "Cartago" },
+        { "id": "303", "nombre": "La Unión", "provincia": "Cartago" },
+        { "id": "304", "nombre": "Jiménez", "provincia": "Cartago" },
+        { "id": "305", "nombre": "Turrialba", "provincia": "Cartago" },
+        { "id": "306", "nombre": "Alvarado", "provincia": "Cartago" },
+        { "id": "307", "nombre": "Oreamuno", "provincia": "Cartago" },
+        { "id": "308", "nombre": "El Guarco", "provincia": "Cartago" },
+        { "id": "401", "nombre": "Heredia", "provincia": "Heredia" },
+        { "id": "402", "nombre": "Barva", "provincia": "Heredia" },
+        { "id": "403", "nombre": "Santo Domingo", "provincia": "Heredia" },
+        { "id": "404", "nombre": "Santa Bárbara", "provincia": "Heredia" },
+        { "id": "405", "nombre": "San Rafael", "provincia": "Heredia" },
+        { "id": "406", "nombre": "San Isidro", "provincia": "Heredia" },
+        { "id": "407", "nombre": "Belén", "provincia": "Heredia" },
+        { "id": "408", "nombre": "Flores", "provincia": "Heredia" },
+        { "id": "409", "nombre": "San Pablo", "provincia": "Heredia" }
+      ]
+    },
+    {
+      "id": "chorotega",
+      "nombre": "Chorotega",
+      "color": "#F59E0B",
+      "descripcion": "Cubre la provincia de Guanacaste. Famosa por sus playas del Pacífico Norte, bosque seco tropical y volcanes como Rincón de la Vieja.",
+      "cantones": [
+        { "id": "501", "nombre": "Liberia", "provincia": "Guanacaste" },
+        { "id": "502", "nombre": "Nicoya", "provincia": "Guanacaste" },
+        { "id": "503", "nombre": "Santa Cruz", "provincia": "Guanacaste" },
+        { "id": "504", "nombre": "Bagaces", "provincia": "Guanacaste" },
+        { "id": "505", "nombre": "Carrillo", "provincia": "Guanacaste" },
+        { "id": "506", "nombre": "Cañas", "provincia": "Guanacaste" },
+        { "id": "507", "nombre": "Abangares", "provincia": "Guanacaste" },
+        { "id": "508", "nombre": "Tilarán", "provincia": "Guanacaste" },
+        { "id": "509", "nombre": "Nandayure", "provincia": "Guanacaste" },
+        { "id": "510", "nombre": "La Cruz", "provincia": "Guanacaste" },
+        { "id": "511", "nombre": "Hojancha", "provincia": "Guanacaste" }
+      ]
+    },
+    {
+      "id": "pacifico-central",
+      "nombre": "Pacífico Central",
+      "color": "#10B981",
+      "descripcion": "Zona costera del Pacífico medio del país. Incluye destinos como Manuel Antonio y Jacó, combinando playa y bosque tropical.",
+      "cantones": [
+        { "id": "204", "nombre": "San Mateo", "provincia": "Alajuela" },
+        { "id": "209", "nombre": "Orotina", "provincia": "Alajuela" },
+        { "id": "601", "nombre": "Puntarenas", "provincia": "Puntarenas" },
+        { "id": "602", "nombre": "Esparza", "provincia": "Puntarenas" },
+        { "id": "604", "nombre": "Montes de Oro", "provincia": "Puntarenas" },
+        { "id": "606", "nombre": "Quepos", "provincia": "Puntarenas" },
+        { "id": "609", "nombre": "Parrita", "provincia": "Puntarenas" },
+        { "id": "611", "nombre": "Garabito", "provincia": "Puntarenas" },
+        { "id": "612", "nombre": "Monteverde", "provincia": "Puntarenas" }
+      ]
+    },
+    {
+      "id": "brunca",
+      "nombre": "Brunca",
+      "color": "#8B5CF6",
+      "descripcion": "Región del Pacífico Sur, con la Península de Osa y el Parque Nacional Corcovado. Alberga una de las mayores concentraciones de biodiversidad del planeta.",
+      "cantones": [
+        { "id": "119", "nombre": "Pérez Zeledón", "provincia": "San José" },
+        { "id": "603", "nombre": "Buenos Aires", "provincia": "Puntarenas" },
+        { "id": "605", "nombre": "Osa", "provincia": "Puntarenas" },
+        { "id": "607", "nombre": "Golfito", "provincia": "Puntarenas" },
+        { "id": "608", "nombre": "Coto Brus", "provincia": "Puntarenas" },
+        { "id": "610", "nombre": "Corredores", "provincia": "Puntarenas" },
+        { "id": "613", "nombre": "Puerto Jiménez", "provincia": "Puntarenas" }
+      ]
+    },
+    {
+      "id": "huetar-atlantica",
+      "nombre": "Huetar Atlántica",
+      "color": "#EF4444",
+      "descripcion": "Comprende la provincia de Limón en el Caribe. Destaca por su cultura afrocaribeña, arrecifes de coral y destinos como Cahuita y Puerto Viejo.",
+      "cantones": [
+        { "id": "701", "nombre": "Limón", "provincia": "Limón" },
+        { "id": "702", "nombre": "Pococí", "provincia": "Limón" },
+        { "id": "703", "nombre": "Siquirres", "provincia": "Limón" },
+        { "id": "704", "nombre": "Talamanca", "provincia": "Limón" },
+        { "id": "705", "nombre": "Matina", "provincia": "Limón" },
+        { "id": "706", "nombre": "Guácimo", "provincia": "Limón" }
+      ]
+    },
+    {
+      "id": "huetar-norte",
+      "nombre": "Huetar Norte",
+      "color": "#14B8A6",
+      "descripcion": "Llanuras del norte del país, frontera con Nicaragua. Incluye el Volcán Arenal, La Fortuna y el humedal de Caño Negro.",
+      "cantones": [
+        { "id": "210", "nombre": "San Carlos", "provincia": "Alajuela" },
+        { "id": "213", "nombre": "Upala", "provincia": "Alajuela" },
+        { "id": "214", "nombre": "Los Chiles", "provincia": "Alajuela" },
+        { "id": "215", "nombre": "Guatuso", "provincia": "Alajuela" },
+        { "id": "216", "nombre": "Río Cuarto", "provincia": "Alajuela" },
+        { "id": "410", "nombre": "Sarapiquí", "provincia": "Heredia" }
+      ]
+    }
   ]
 }
