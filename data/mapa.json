@@ -1,0 +1,13 @@
+{
+  "svgPath": "assets/img/costa-rica.svg",
+  "viewBox": "0 0 648.29871 612.98956",
+  "provincias": [
+    { "id": "CR-SJ", "nombre": "San José",   "region": "Central" },
+    { "id": "CR-A",  "nombre": "Alajuela",   "region": "Central" },
+    { "id": "CR-C",  "nombre": "Cartago",    "region": "Central" },
+    { "id": "CR-H",  "nombre": "Heredia",    "region": "Central" },
+    { "id": "CR-G",  "nombre": "Guanacaste", "region": "Chorotega" },
+    { "id": "CR-P",  "nombre": "Puntarenas", "region": "Pacífico Central" },
+    { "id": "CR-L",  "nombre": "Limón",      "region": "Huetar Atlántica" }
+  ]
+}
