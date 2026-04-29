@@ -1,194 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
- 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Guía Turística Multimedia de Costa Rica - Explora destinos turísticos del país">
   <title>Guía Turística de Costa Rica</title>
- 
-  <!-- Estilos globales (reset, fuentes, variables) -->
+
   <link rel="stylesheet" href="css/global.css">
- 
-  <!-- Custom Elements como ES Modules -->
+
   <script type="module" src="components/app-header.js"></script>
   <script type="module" src="components/mapa-interactivo.js"></script>
   <script type="module" src="components/destino-card.js"></script>
   <script type="module" src="components/galeria-imagenes.js"></script>
   <script type="module" src="components/audio-guia.js"></script>
   <script type="module" src="components/destino-detalle.js"></script>
+
+  <script type="module" src="app.js"></script>
 </head>
- 
+
 <body>
- 
-  <!-- Header con navegación por regiones -->
-  <app-header active-region="Chorotega"></app-header>
- 
-  <!-- Contenedor principal de la aplicación -->
+
+  <!-- Header sin active-region: la app arranca en el mapa -->
+  <app-header></app-header>
+
   <main id="app">
- 
-    <!-- Vista 1: Mapa interactivo (pantalla inicial) -->
+
     <section id="vista-mapa" class="vista activa">
       <div class="contenedor">
         <mapa-interactivo></mapa-interactivo>
       </div>
     </section>
- 
-    <!-- Vista 2: Listado de destinos por región -->
+
     <section id="vista-listado" class="vista">
       <div class="contenedor">
-        <button id="btn-volver-mapa" class="btn-volver">← Volver al mapa</button>
-        <h2 id="titulo-region">Pacífico Norte</h2>
+
+        <div class="listado-header">
+          <h2 id="titulo-region" class="titulo-region">Pacífico Norte</h2>
+          <button id="btn-volver-mapa" class="btn-volver" aria-label="Volver al mapa">
+            ← Volver al mapa
+          </button>
+        </div>
+
         <div id="grid-destinos" class="grid-destinos">
-          <!-- Las destino-cards se generan dinámicamente desde JS -->
+          <!-- Cards generadas dinámicamente desde app.js -->
         </div>
       </div>
     </section>
- 
-    <!-- Vista 3: Detalle de un destino -->
+
     <section id="vista-detalle" class="vista">
       <div class="contenedor">
         <button id="btn-volver" class="btn-volver">← Volver</button>
-        <!-- El destino-detalle se inserta dinámicamente aquí -->
         <div id="contenedor-detalle"></div>
       </div>
     </section>
- 
+
   </main>
- 
-  <!-- Footer simple -->
+
   <footer class="app-footer">
     <p>Guía Turística de Costa Rica · Proyecto IF7102 · UCR Sede Guanacaste 2026</p>
   </footer>
- 
-  <!-- Lógica principal de la aplicación -->
-  <script type="module">
-    // Estado global de la aplicación
-    let destinos = [];
-    let regionActiva = "Chorotega";
-    let cambioDesdeApp = false;
- 
-    // Referencias a elementos del DOM
-    const gridDestinos      = document.getElementById("grid-destinos");
-    const tituloRegion      = document.getElementById("titulo-region");
-    const vistaMapa         = document.getElementById("vista-mapa");
-    const vistaListado      = document.getElementById("vista-listado");
-    const vistaDetalle      = document.getElementById("vista-detalle");
-    const contenedorDetalle = document.getElementById("contenedor-detalle");
-    const btnVolver         = document.getElementById("btn-volver");
-    const btnVolverMapa     = document.getElementById("btn-volver-mapa");
-    const appHeader         = document.querySelector("app-header");
- 
-    // Mapeo de regiones técnicas a nombres turísticos
-    const nombresRegion = {
-      "Chorotega":        "Pacífico Norte",
-      "Huetar Atlántica": "Caribe",
-      "Central":          "Valle Central",
-      "Pacífico Central": "Pacífico Central",
-      "Brunca":           "Pacífico Sur"
-    };
- 
-    // ── Navegación entre vistas ──────────────────────────────────────────────
- 
-    function mostrarVista(vista) {
-      [vistaMapa, vistaListado, vistaDetalle].forEach(v => v.classList.remove("activa"));
-      vista.classList.add("activa");
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
- 
-    function sincronizarHeader(region) {
-      if (!appHeader) return;
-      cambioDesdeApp = true;
-      appHeader.setAttribute("active-region", region);
-      cambioDesdeApp = false;
-    }
- 
-    // ── Cargar datos del JSON ────────────────────────────────────────────────
- 
-    async function cargarDestinos() {
-      try {
-        const respuesta = await fetch("./data/destinos.json");
-        if (!respuesta.ok) throw new Error("No se pudo cargar el JSON");
-        const datos = await respuesta.json();
-        destinos = datos.destinos;
-        // No renderizar aún: el usuario está viendo el mapa
-      } catch (error) {
-        console.error("Error al cargar destinos:", error);
-        gridDestinos.innerHTML = "<p class='error'>Error al cargar los destinos.</p>";
-      }
-    }
- 
-    // ── Renderiza las destino-cards filtradas por región ─────────────────────
- 
-    function renderizarDestinos(region) {
-      gridDestinos.innerHTML = "";
-      tituloRegion.textContent = nombresRegion[region] || region;
- 
-      const destinosFiltrados = destinos.filter(d => d.region === region);
- 
-      if (destinosFiltrados.length === 0) {
-        gridDestinos.innerHTML = "<p class='error'>No hay destinos disponibles para esta región aún.</p>";
-        return;
-      }
- 
-      destinosFiltrados.forEach(destino => {
-        const card = document.createElement("destino-card");
-        card.setAttribute("destino-id", destino.id);
-        card.setAttribute("nombre",     destino.nombre);
-        card.setAttribute("imagen",     destino.imagen_portada);
-        card.setAttribute("region",     destino.zona_turistica || destino.region);
-        gridDestinos.appendChild(card);
-      });
-    }
- 
-    // ── Muestra la vista de detalle de un destino ────────────────────────────
- 
-    function mostrarDetalle(destinoId) {
-      const destino = destinos.find(d => d.id === destinoId);
-      if (!destino) return;
- 
-      contenedorDetalle.innerHTML = "";
-      const detalle = document.createElement("destino-detalle");
-      detalle.destino = destino;
-      contenedorDetalle.appendChild(detalle);
- 
-      mostrarVista(vistaDetalle);
-    }
- 
-    // ── Eventos ──────────────────────────────────────────────────────────────
- 
-    // Provincia elegida desde <mapa-interactivo>
-    document.addEventListener("provincia-seleccionada", (ev) => {
-      regionActiva = ev.detail.region;
-      renderizarDestinos(regionActiva);
-      mostrarVista(vistaListado);
-      sincronizarHeader(regionActiva);
-    });
- 
-    // Región elegida desde <app-header>
-    document.addEventListener("region-selected", (ev) => {
-      if (cambioDesdeApp) return;
-      regionActiva = ev.detail.region;
-      renderizarDestinos(regionActiva);
-      mostrarVista(vistaListado);
-    });
- 
-    // Destino seleccionado desde una card
-    document.addEventListener("destino-selected", (ev) => {
-      mostrarDetalle(ev.detail.id);
-    });
- 
-    // Volver desde detalle → listado
-    btnVolver.addEventListener("click", () => mostrarVista(vistaListado));
- 
-    // Volver desde listado → mapa
-    btnVolverMapa.addEventListener("click", () => mostrarVista(vistaMapa));
- 
-    // ── Arranque ─────────────────────────────────────────────────────────────
- 
-    cargarDestinos();
-  </script>
- 
+
 </body>
- 
+
 </html>

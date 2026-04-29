@@ -1,12 +1,15 @@
 /**
  * app.js
- * Lógica principal de la Guía Turística de Costa Rica.
+ * Lógica principal (orquestación) de la Guía Turística de Costa Rica.
+ *
+ * Convención: la región se identifica SIEMPRE por su nombre (capitalizado,
+ * con tildes) en TODOS los archivos del proyecto.
  */
 
 // ── Estado global ────────────────────────────────────────────────────────────
 
-let destinos     = [];
-let regionActiva = "Chorotega";
+let destinos       = [];
+let regionActiva   = null;     // null = estamos en la vista del mapa
 let cambioDesdeApp = false;
 
 // ── Referencias DOM ──────────────────────────────────────────────────────────
@@ -21,16 +24,6 @@ const btnVolver         = document.getElementById("btn-volver");
 const btnVolverMapa     = document.getElementById("btn-volver-mapa");
 const appHeader         = document.querySelector("app-header");
 
-// ── Mapeo región técnica → nombre turístico ──────────────────────────────────
-
-const NOMBRES_REGION = {
-  "Chorotega":        "Pacífico Norte",
-  "Huetar Atlántica": "Caribe",
-  "Central":          "Valle Central",
-  "Pacífico Central": "Pacífico Central",
-  "Brunca":           "Pacífico Sur",
-};
-
 // ── Vistas ───────────────────────────────────────────────────────────────────
 
 function mostrarVista(vista) {
@@ -42,11 +35,22 @@ function mostrarVista(vista) {
 function sincronizarHeader(region) {
   if (!appHeader) return;
   cambioDesdeApp = true;
-  appHeader.setAttribute("active-region", region);
+  if (region === null || region === undefined) {
+    appHeader.removeAttribute("active-region");
+  } else {
+    appHeader.setAttribute("active-region", region);
+  }
   cambioDesdeApp = false;
 }
 
-// ── Datos ────────────────────────────────────────────────────────────────────
+// Vuelve a la vista del mapa: limpia la región activa
+function volverAlMapa() {
+  regionActiva = null;
+  sincronizarHeader(null);
+  mostrarVista(vistaMapa);
+}
+
+// ── Carga de datos ───────────────────────────────────────────────────────────
 
 async function cargarDestinos() {
   try {
@@ -55,21 +59,23 @@ async function cargarDestinos() {
     const datos = await res.json();
     destinos = datos.destinos;
   } catch (err) {
-    console.error("Error al cargar destinos:", err);
-    gridDestinos.innerHTML = "<p class='error'>Error al cargar los destinos.</p>";
+    console.error("[app] Error al cargar destinos:", err);
+    if (gridDestinos) {
+      gridDestinos.innerHTML = "<p class='error'>Error al cargar los destinos.</p>";
+    }
   }
 }
 
 // ── Render destinos ──────────────────────────────────────────────────────────
 
 function renderizarDestinos(region) {
-  gridDestinos.innerHTML = "";
-  tituloRegion.textContent = NOMBRES_REGION[region] || region;
+  gridDestinos.innerHTML   = "";
+  tituloRegion.textContent = region;
 
   const filtrados = destinos.filter(d => d.region === region);
 
   if (filtrados.length === 0) {
-    gridDestinos.innerHTML = "<p class='error'>No hay destinos disponibles para esta región aún.</p>";
+    gridDestinos.innerHTML = `<p class='error'>No hay destinos disponibles para la región ${region} aún.</p>`;
     return;
   }
 
@@ -97,17 +103,15 @@ function mostrarDetalle(destinoId) {
   mostrarVista(vistaDetalle);
 }
 
-// ── Eventos ──────────────────────────────────────────────────────────────────
+// ── Eventos de los Custom Elements ───────────────────────────────────────────
 
-// Provincia elegida desde <mapa-interactivo>
-document.addEventListener("provincia-seleccionada", (ev) => {
-  regionActiva = ev.detail.region;
+document.addEventListener("region-seleccionada", (ev) => {
+  regionActiva = ev.detail.regionNombre;
   renderizarDestinos(regionActiva);
-  mostrarVista(vistaListado);
   sincronizarHeader(regionActiva);
+  mostrarVista(vistaListado);
 });
 
-// Región elegida desde <app-header>
 document.addEventListener("region-selected", (ev) => {
   if (cambioDesdeApp) return;
   regionActiva = ev.detail.region;
@@ -115,17 +119,23 @@ document.addEventListener("region-selected", (ev) => {
   mostrarVista(vistaListado);
 });
 
-// Card seleccionada
 document.addEventListener("destino-selected", (ev) => {
   mostrarDetalle(ev.detail.id);
 });
 
-// Volver desde detalle → listado
-btnVolver.addEventListener("click", () => mostrarVista(vistaListado));
+// El logo del header pide volver al mapa
+document.addEventListener("volver-mapa", () => {
+  volverAlMapa();
+});
 
-// Volver desde listado → mapa
-btnVolverMapa.addEventListener("click", () => mostrarVista(vistaMapa));
+// ── Botones de navegación ────────────────────────────────────────────────────
+
+if (btnVolver)     btnVolver.addEventListener("click",     () => mostrarVista(vistaListado));
+if (btnVolverMapa) btnVolverMapa.addEventListener("click", () => volverAlMapa());
 
 // ── Arranque ─────────────────────────────────────────────────────────────────
 
 cargarDestinos();
+
+// La app arranca en la vista del mapa, sin región activa
+sincronizarHeader(null);

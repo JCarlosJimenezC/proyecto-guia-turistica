@@ -3,11 +3,8 @@
  * Custom Element: Mapa interactivo de Costa Rica por cantones agrupados en
  * regiones socioeconómicas (MIDEPLAN).
  *
- * Compatible con SVGs cuyos cantones están fragmentados en múltiples paths
- * (id pattern: "###" o "###_NN" o "path####" con inkscape:label).
- *
  * Eventos emitidos:
- *   - 'region-seleccionada' → detail: { regionId, regionNombre }
+ *   - 'region-seleccionada' → detail: { regionNombre }
  *
  * @author Grupo 5 - IF7102
  */
@@ -19,8 +16,8 @@ class MapaInteractivo extends HTMLElement {
     this.attachShadow({ mode: "open" });
 
     this._config = null;
-    this._cantonToRegion = new Map();   // 'idCanton' → { region, cantonNombre }
-    this._regionToPaths  = new Map();   // 'idRegion' → [SVGPathElement, ...]
+    this._cantonToRegion = new Map();
+    this._regionToPaths  = new Map();
     this._regionActiva   = null;
   }
 
@@ -43,27 +40,16 @@ class MapaInteractivo extends HTMLElement {
     }
   }
 
-  // ── Resolución de ID de cantón a partir de un path ─────────────────────────
-  // Soporta múltiples formatos:
-  //   1. id="216"           → ID directo
-  //   2. id="606_05"        → fragmento; toma solo lo previo al "_"
-  //   3. id="path3884" + inkscape:label="612 Monteverde" → usa el label
-  //   4. id="607_01" pero label "613 Puerto Jiménez" → label tiene prioridad
   _resolverIdCanton(path) {
     const label = path.getAttribute("inkscape:label") || "";
-
-    // Prioridad 1: label con formato "### Algo"
     const matchLabel = label.match(/^(\d{3})\b/);
     if (matchLabel && this._cantonToRegion.has(matchLabel[1])) {
       return matchLabel[1];
     }
-
-    // Prioridad 2: id directo o fragmentado por "_"
     const idBase = (path.id || "").split("_")[0];
     if (this._cantonToRegion.has(idBase)) {
       return idBase;
     }
-
     return null;
   }
 
@@ -76,7 +62,7 @@ class MapaInteractivo extends HTMLElement {
     }
 
     const leyendaHTML = this._config.regiones.map(r => `
-      <li class="leyenda-item" data-region="${r.id}">
+      <li class="leyenda-item" data-region="${r.nombre}">
         <span class="leyenda-color" style="background:${r.color}"></span>
         <span class="leyenda-nombre">${r.nombre}</span>
       </li>
@@ -92,115 +78,127 @@ class MapaInteractivo extends HTMLElement {
         }
 
         .titulo {
-          font-size: 2rem;
+          font-size: 2.25rem;
           font-weight: 700;
-          color: var(--color-primario-oscuro, #085041);
+          color: var(--color-primario, #0F6E56);
           margin-bottom: 0.25rem;
           text-align: center;
         }
 
         .subtitulo {
-          color: var(--color-texto-suave, #5F5E5A);
+          color: var(--color-texto-suave, #9ca3af);
           margin-bottom: 1.5rem;
           text-align: center;
+          font-size: 1rem;
         }
 
+        /* Mapa: ahora ocupa todo el ancho disponible y tiene fondo oscuro */
         .mapa-wrapper {
           position: relative;
           width: 100%;
-          max-width: 720px;
-          background-color: #f4f7fb;
+          background-color: #111827;
+          border: 1px solid #1f2937;
           border-radius: 16px;
           overflow: hidden;
-          box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+          box-shadow: 0 8px 32px rgba(0,0,0,0.4);
         }
 
         object {
           display: block;
           width: 100%;
-          height: 580px;
+          height: 720px;
         }
 
+        /* Tooltip: región arriba (grande), cantón abajo (pequeño) */
         #tooltip {
           position: fixed;
-          background: rgba(0,0,0,0.85);
+          background: rgba(15, 23, 42, 0.95);
           color: white;
-          padding: 6px 10px;
-          border-radius: 8px;
+          padding: 10px 14px;
+          border-radius: 10px;
           display: none;
           pointer-events: none;
-          font-size: 0.875rem;
-          font-weight: 600;
           z-index: 200;
-          backdrop-filter: blur(4px);
+          backdrop-filter: blur(8px);
           font-family: inherit;
+          border: 1px solid rgba(255,255,255,0.1);
+          box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+          min-width: 180px;
         }
 
         #tooltip .tooltip-region {
-          font-size: 0.75rem;
-          font-weight: 400;
-          opacity: 0.8;
+          font-size: 1rem;
+          font-weight: 700;
+          color: #fff;
           display: block;
-          margin-top: 2px;
+          line-height: 1.2;
         }
 
+        #tooltip .tooltip-canton {
+          font-size: 0.8rem;
+          font-weight: 400;
+          opacity: 0.7;
+          display: block;
+          margin-top: 4px;
+        }
+
+        /* Leyenda */
         .leyenda {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
           gap: 0.75rem 1.25rem;
           list-style: none;
-          padding: 1rem 0 0.5rem;
+          padding: 1.25rem 0 0.5rem;
           margin: 0;
           width: 100%;
-          max-width: 720px;
         }
 
         .leyenda-item {
           display: flex;
           align-items: center;
           gap: 0.5rem;
-          font-size: 0.875rem;
-          color: var(--color-texto, #2A2A28);
+          font-size: 0.9rem;
+          color: var(--color-texto-claro, #e5e7eb);
           cursor: pointer;
-          padding: 4px 8px;
-          border-radius: 6px;
+          padding: 6px 12px;
+          border-radius: 999px;
           transition: background 0.15s ease;
+          background: rgba(255,255,255,0.04);
+          border: 1px solid rgba(255,255,255,0.08);
         }
 
         .leyenda-item:hover {
-          background: var(--color-fondo-suave, #F1EFE8);
+          background: rgba(255,255,255,0.1);
         }
 
         .leyenda-item.activa {
-          background: var(--color-fondo-suave, #F1EFE8);
+          background: rgba(255,255,255,0.15);
           font-weight: 700;
+          border-color: rgba(255,255,255,0.25);
         }
 
         .leyenda-color {
-          width: 16px;
-          height: 16px;
+          width: 14px;
+          height: 14px;
           border-radius: 4px;
           flex-shrink: 0;
-          border: 1px solid rgba(0,0,0,0.1);
+          border: 1px solid rgba(255,255,255,0.2);
         }
 
+        /* Panel de selección */
         .panel {
           display: none;
           align-items: center;
           justify-content: space-between;
           gap: 1rem;
           margin-top: 1.5rem;
-          padding: 1rem 1.5rem;
-          background-color: var(--color-fondo-card, #fff);
-          border: 1px solid var(--color-borde, #D3D1C7);
+          padding: 1.25rem 1.5rem;
+          background-color: rgba(17, 24, 39, 0.7);
+          border: 1px solid rgba(255,255,255,0.1);
           border-radius: 12px;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
           width: 100%;
-          max-width: 720px;
-          font-weight: 600;
-          font-size: 1.1rem;
-          color: var(--color-primario-oscuro, #085041);
+          color: #e5e7eb;
           animation: fadeIn 0.25s ease;
         }
 
@@ -209,20 +207,21 @@ class MapaInteractivo extends HTMLElement {
         .panel-info {
           display: flex;
           flex-direction: column;
-          gap: 0.15rem;
+          gap: 0.3rem;
         }
 
         .panel-region {
-          font-size: 1.15rem;
+          font-size: 1.25rem;
           font-weight: 700;
+          color: #fff;
         }
 
         .panel-descripcion {
           font-size: 0.875rem;
           font-weight: 400;
-          color: var(--color-texto-suave, #5F5E5A);
-          max-width: 380px;
-          line-height: 1.4;
+          color: #9ca3af;
+          max-width: 540px;
+          line-height: 1.5;
         }
 
         .panel-acciones {
@@ -234,7 +233,7 @@ class MapaInteractivo extends HTMLElement {
         .btn-ver {
           background: linear-gradient(135deg, var(--color-primario, #0F6E56) 0%, var(--color-primario-oscuro, #085041) 100%);
           color: white;
-          padding: 0.6rem 1.5rem;
+          padding: 0.7rem 1.5rem;
           border-radius: 8px;
           font-weight: 700;
           font-size: 0.95rem;
@@ -255,19 +254,19 @@ class MapaInteractivo extends HTMLElement {
         }
 
         .btn-reset {
-          background: var(--color-fondo-suave, #F1EFE8);
-          color: var(--color-texto-suave, #5F5E5A);
-          padding: 0.6rem 1rem;
+          background: rgba(255,255,255,0.05);
+          color: #d1d5db;
+          padding: 0.7rem 1rem;
           border-radius: 8px;
           font-size: 0.875rem;
-          border: 1px solid var(--color-borde, #D3D1C7);
+          border: 1px solid rgba(255,255,255,0.1);
           cursor: pointer;
           transition: background 0.15s ease;
           font-family: inherit;
         }
 
         .btn-reset:hover {
-          background: var(--color-borde-claro, #E8E6DD);
+          background: rgba(255,255,255,0.1);
         }
 
         @keyframes fadeIn {
@@ -275,10 +274,10 @@ class MapaInteractivo extends HTMLElement {
           to   { opacity: 1; transform: translateY(0); }
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
           .panel { flex-direction: column; align-items: flex-start; }
-          .titulo { font-size: 1.5rem; }
-          object { height: 420px; }
+          .titulo { font-size: 1.6rem; }
+          object { height: 480px; }
         }
       </style>
 
@@ -324,7 +323,6 @@ class MapaInteractivo extends HTMLElement {
 
     const viewBoxOriginal = this._config.viewBox;
 
-    // Indexar canton → región
     this._config.regiones.forEach(region => {
       region.cantones.forEach(canton => {
         this._cantonToRegion.set(canton.id, {
@@ -338,7 +336,7 @@ class MapaInteractivo extends HTMLElement {
       item.addEventListener("mouseenter", () => this._resaltarRegion(item.dataset.region));
       item.addEventListener("mouseleave", () => this._quitarResaltado());
       item.addEventListener("click", () => {
-        const regionObj = this._config.regiones.find(r => r.id === item.dataset.region);
+        const regionObj = this._config.regiones.find(r => r.nombre === item.dataset.region);
         if (regionObj) this._seleccionarRegion(regionObj);
       });
     });
@@ -354,14 +352,10 @@ class MapaInteractivo extends HTMLElement {
 
     btnVer.addEventListener("click", () => {
       if (!this._regionActiva) return;
-      const region = this._config.regiones.find(r => r.id === this._regionActiva);
       this.dispatchEvent(new CustomEvent("region-seleccionada", {
         bubbles: true,
         composed: true,
-        detail: {
-          regionId: region.id,
-          regionNombre: region.nombre
-        }
+        detail: { regionNombre: this._regionActiva }
       }));
     });
 
@@ -375,10 +369,19 @@ class MapaInteractivo extends HTMLElement {
     if (mapObject.contentDocument || mapObject.getSVGDocument()) onLoad();
   }
 
-  // ── Aplicar estilos e interacciones a cada path ────────────────────────────
-
   _aplicarInteracciones(svgDoc, tooltip) {
     svgDoc.documentElement.setAttribute("viewBox", this._config.viewBox);
+
+    // Hacer que el SVG ocupe todo el espacio disponible (preserva aspect ratio)
+    svgDoc.documentElement.setAttribute("preserveAspectRatio", "xMidYMid meet");
+    svgDoc.documentElement.style.width  = "100%";
+    svgDoc.documentElement.style.height = "100%";
+    svgDoc.documentElement.style.display = "block";
+
+    // Fondo oscuro para el SVG mismo, por si acaso
+    if (svgDoc.documentElement.style) {
+      svgDoc.documentElement.style.backgroundColor = "#111827";
+    }
 
     const sinMapear = [];
 
@@ -388,33 +391,34 @@ class MapaInteractivo extends HTMLElement {
       if (!idCanton) {
         const label = path.getAttribute("inkscape:label") || "";
         sinMapear.push({ id: path.id || "(sin id)", label: label || "(sin label)" });
-        path.style.fill        = "#e5e7eb";
-        path.style.stroke      = "#ffffff";
+        path.style.fill        = "#374151";
+        path.style.stroke      = "#1f2937";
         path.style.strokeWidth = "0.3";
         return;
       }
 
       const region = this._cantonToRegion.get(idCanton);
 
-      if (!this._regionToPaths.has(region.id)) {
-        this._regionToPaths.set(region.id, []);
+      if (!this._regionToPaths.has(region.nombre)) {
+        this._regionToPaths.set(region.nombre, []);
       }
-      this._regionToPaths.get(region.id).push(path);
+      this._regionToPaths.get(region.nombre).push(path);
 
       path.style.fill           = region.color;
-      path.style.stroke         = "#ffffff";
-      path.style.strokeWidth    = "0.3";
-      path.style.transition     = "fill 0.2s ease, opacity 0.2s ease";
+      path.style.stroke         = "#0b1220";
+      path.style.strokeWidth    = "0.4";
+      path.style.transition     = "fill 0.2s ease, opacity 0.2s ease, stroke-width 0.2s ease";
       path.style.cursor         = "pointer";
-      path.dataset.regionId     = region.id;
+      path.dataset.regionNombre = region.nombre;
       path.dataset.cantonId     = idCanton;
       path.dataset.cantonNombre = region.cantonNombre;
 
+      // Tooltip: región arriba grande, cantón abajo pequeño
       path.addEventListener("mouseover", (e) => {
-        this._resaltarRegion(region.id);
+        this._resaltarRegion(region.nombre);
         tooltip.innerHTML = `
-          ${region.cantonNombre}
           <span class="tooltip-region">Región ${region.nombre}</span>
+          <span class="tooltip-canton">Cantón: ${region.cantonNombre}</span>
         `;
         tooltip.style.display = "block";
         this._moverTooltip(e, tooltip);
@@ -450,7 +454,7 @@ class MapaInteractivo extends HTMLElement {
     const svgDoc = mapObject.contentDocument || mapObject.getSVGDocument();
     if (!svgDoc) return;
 
-    const paths = this._regionToPaths.get(region.id);
+    const paths = this._regionToPaths.get(region.nombre);
     if (!paths || paths.length === 0) return;
 
     let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
@@ -471,7 +475,7 @@ class MapaInteractivo extends HTMLElement {
       );
     }
 
-    this._regionActiva = region.id;
+    this._regionActiva = region.nombre;
     nombreRegion.textContent = `Región ${region.nombre}`;
     descRegion.textContent   = region.descripcion || "";
     btnVer.textContent       = `Ver destinos →`;
@@ -479,18 +483,21 @@ class MapaInteractivo extends HTMLElement {
     panel.classList.add("visible");
 
     itemsLeyenda.forEach(i => {
-      i.classList.toggle("activa", i.dataset.region === region.id);
+      i.classList.toggle("activa", i.dataset.region === region.nombre);
     });
 
-    this._resaltarRegion(region.id);
+    this._resaltarRegion(region.nombre);
   }
 
-  // ── Helpers de resaltado ───────────────────────────────────────────────────
+  // ── Resaltado: la región hovereada se ve fuerte, las demás se desvanecen ──
 
-  _resaltarRegion(regionId) {
-    this._regionToPaths.forEach((paths, id) => {
-      const opacidad = (id === regionId) ? "1" : "0.35";
-      paths.forEach(p => { p.style.opacity = opacidad; });
+  _resaltarRegion(regionNombre) {
+    this._regionToPaths.forEach((paths, nombre) => {
+      const esActiva = (nombre === regionNombre);
+      paths.forEach(p => {
+        p.style.opacity     = esActiva ? "1"   : "0.2";
+        p.style.strokeWidth = esActiva ? "0.6" : "0.4";
+      });
     });
   }
 
@@ -500,7 +507,10 @@ class MapaInteractivo extends HTMLElement {
       return;
     }
     this._regionToPaths.forEach(paths => {
-      paths.forEach(p => { p.style.opacity = "1"; });
+      paths.forEach(p => {
+        p.style.opacity     = "1";
+        p.style.strokeWidth = "0.4";
+      });
     });
   }
 
