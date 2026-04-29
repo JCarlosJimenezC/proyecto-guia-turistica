@@ -5,34 +5,35 @@
  * Funcionalidad:
  * - Muestra el nombre de la guía y el menú de regiones disponibles.
  * - Resalta visualmente la región activa según el atributo "active-region".
+ *   Si "active-region" está vacío o no existe, no se resalta ningún tab
+ *   (caso típico: el usuario está en la vista del mapa).
  * - Emite un CustomEvent('region-selected') al hacer clic en una región.
+ * - Emite un CustomEvent('volver-mapa') al hacer clic en el logo o en el
+ *   nombre de la guía.
  *
  * Atributo observado: active-region
  *
  * Eventos emitidos:
  *   - 'region-selected' → detail: { region: string }
+ *   - 'volver-mapa'     → sin detail
  *
  * Uso:
  *   <app-header active-region="Chorotega"></app-header>
+ *   <app-header></app-header>  (ninguna región activa)
  *
  * @author Grupo 5 - IF7102
  */
 
 class AppHeader extends HTMLElement {
 
-  // ===== ATRIBUTOS OBSERVADOS =====
   static get observedAttributes() {
     return ["active-region"];
   }
 
-  // ===== CONSTRUCTOR =====
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
 
-    // Lista de regiones disponibles
-    // 'region' = identificador interno (coincide con el JSON)
-    // 'label'  = nombre amigable que ve el usuario
     this.regiones = [
       { region: "Chorotega",        label: "Chorotega" },
       { region: "Huetar Norte",     label: "Huetar Norte" },
@@ -42,8 +43,6 @@ class AppHeader extends HTMLElement {
       { region: "Brunca",           label: "Brunca" }
     ];
   }
-
-  // ===== CICLO DE VIDA =====
 
   connectedCallback() {
     this.render();
@@ -55,12 +54,10 @@ class AppHeader extends HTMLElement {
     }
   }
 
-  // ===== GETTERS =====
+  // Devuelve null si no hay región activa (en vez de un default forzado)
   get activeRegion() {
-    return this.getAttribute("active-region") || "Chorotega";
+    return this.getAttribute("active-region") || null;
   }
-
-  // ===== RENDERIZADO =====
 
   render() {
     this.shadowRoot.innerHTML = `
@@ -70,7 +67,6 @@ class AppHeader extends HTMLElement {
           width: 100%;
         }
 
-        /* === HEADER PRINCIPAL === */
         .header {
           background: linear-gradient(
             135deg,
@@ -86,7 +82,7 @@ class AppHeader extends HTMLElement {
         }
 
         .header-contenido {
-          max-width: 1200px;
+          max-width: 1400px;
           margin: 0 auto;
           display: flex;
           align-items: center;
@@ -95,15 +91,33 @@ class AppHeader extends HTMLElement {
           flex-wrap: wrap;
         }
 
-        /* === LOGO === */
+        /* Logo: ahora es un botón clickeable que vuelve al mapa */
         .logo {
           display: flex;
           align-items: center;
-          gap: 0.5rem;
+          gap: 0.6rem;
           font-size: 1.25rem;
           font-weight: 600;
           flex-shrink: 0;
           letter-spacing: 0.01em;
+          background: none;
+          border: none;
+          color: inherit;
+          cursor: pointer;
+          padding: 0.25rem 0.5rem;
+          border-radius: 8px;
+          transition: background 0.2s ease, transform 0.15s ease;
+          font-family: inherit;
+        }
+
+        .logo:hover {
+          background: rgba(255, 255, 255, 0.1);
+          transform: translateY(-1px);
+        }
+
+        .logo:focus-visible {
+          outline: 2px solid #FFFFFF;
+          outline-offset: 2px;
         }
 
         .logo-icono {
@@ -115,7 +129,6 @@ class AppHeader extends HTMLElement {
           flex-shrink: 0;
         }
 
-        /* === NAVEGACIÓN DE REGIONES === */
         .nav-regiones {
           display: flex;
           gap: 0.5rem;
@@ -131,7 +144,6 @@ class AppHeader extends HTMLElement {
           display: none;
         }
 
-        /* === TABS DE REGIÓN === */
         .tab-region {
           background-color: rgba(255, 255, 255, 0.1);
           color: #FFFFFF;
@@ -156,7 +168,6 @@ class AppHeader extends HTMLElement {
           outline-offset: 2px;
         }
 
-        /* Estado activo */
         .tab-region.activa {
           background-color: var(--color-secundario, #BA7517);
           color: #FFFFFF;
@@ -170,50 +181,28 @@ class AppHeader extends HTMLElement {
           filter: brightness(1.1);
         }
 
-        /* === RESPONSIVE === */
         @media (max-width: 768px) {
-          .header {
-            padding: 0.75rem 1rem;
-          }
-
-          .header-contenido {
-            gap: 0.75rem;
-            justify-content: flex-start;
-          }
-
-          .logo {
-            font-size: 1.1rem;
-            width: 100%;
-          }
-
-          .nav-regiones {
-            width: 100%;
-            justify-content: flex-start;
-          }
-
-          .tab-region {
-            padding: 0.4rem 1rem;
-            font-size: 0.85rem;
-          }
+          .header { padding: 0.75rem 1rem; }
+          .header-contenido { gap: 0.75rem; justify-content: flex-start; }
+          .logo { font-size: 1.1rem; width: 100%; }
+          .nav-regiones { width: 100%; justify-content: flex-start; }
+          .tab-region { padding: 0.4rem 1rem; font-size: 0.85rem; }
         }
 
         @media (max-width: 480px) {
-          .logo span:not(.logo-icono) {
-            font-size: 1rem;
-          }
+          .logo span:not(.logo-icono) { font-size: 1rem; }
         }
       </style>
 
       <header class="header" role="banner">
         <div class="header-contenido">
 
-          <!-- Logo y nombre de la guía -->
-          <div class="logo">
-            <img class="logo-icono" src="assets/img/Logo.png" alt="Logo Guía Turística CR">
+          <!-- Logo: botón clickeable que vuelve al mapa -->
+          <button class="logo" id="btn-logo" aria-label="Volver al mapa">
+            <img class="logo-icono" src="assets/img/Logo.png" alt="">
             <span>Guía Turística CR</span>
-          </div>
+          </button>
 
-          <!-- Navegación de regiones -->
           <nav class="nav-regiones" role="navigation" aria-label="Regiones turísticas">
             ${this.regiones.map(r => `
               <button
@@ -233,9 +222,8 @@ class AppHeader extends HTMLElement {
     this.agregarEventos();
   }
 
-  // ===== MANEJO DE EVENTOS =====
-
   agregarEventos() {
+    // Botones de región
     const botones = this.shadowRoot.querySelectorAll(".tab-region");
     botones.forEach(boton => {
       boton.addEventListener("click", (ev) => {
@@ -243,31 +231,38 @@ class AppHeader extends HTMLElement {
         this.seleccionarRegion(region);
       });
     });
+
+    // Logo: clic emite "volver-mapa"
+    const btnLogo = this.shadowRoot.getElementById("btn-logo");
+    if (btnLogo) {
+      btnLogo.addEventListener("click", () => {
+        this.dispatchEvent(new CustomEvent("volver-mapa", {
+          bubbles: true,
+          composed: true
+        }));
+      });
+    }
   }
 
   seleccionarRegion(region) {
-    // Actualiza el atributo (esto disparará attributeChangedCallback)
     this.setAttribute("active-region", region);
 
-    // Emite el CustomEvent que escucha el index.html
-    const evento = new CustomEvent("region-selected", {
+    this.dispatchEvent(new CustomEvent("region-selected", {
       bubbles: true,
       composed: true,
       detail: { region: region }
-    });
-    this.dispatchEvent(evento);
+    }));
   }
 
-  // Actualiza visualmente cuál tab está activa sin re-renderizar todo
   actualizarRegionActiva() {
     const botones = this.shadowRoot.querySelectorAll(".tab-region");
+    const activa  = this.activeRegion;
     botones.forEach(boton => {
-      const esActiva = boton.dataset.region === this.activeRegion;
+      const esActiva = activa !== null && boton.dataset.region === activa;
       boton.classList.toggle("activa", esActiva);
       boton.setAttribute("aria-current", esActiva ? "page" : "false");
     });
   }
 }
 
-// Registra el Custom Element con el navegador
 customElements.define("app-header", AppHeader);

@@ -3,7 +3,6 @@
   "viewBox": "0 0 648.29871 612.98956",
   "regiones": [
     {
-      "id": "central",
       "nombre": "Central",
       "color": "#3B82F6",
       "descripcion": "Comprende el Valle Central y zonas montañosas aledañas. Es la región más poblada del país e incluye atractivos como el Volcán Poás y el Valle de Orosi.",
@@ -56,7 +55,6 @@
       ]
     },
     {
-      "id": "chorotega",
       "nombre": "Chorotega",
       "color": "#F59E0B",
       "descripcion": "Cubre la provincia de Guanacaste. Famosa por sus playas del Pacífico Norte, bosque seco tropical y volcanes como Rincón de la Vieja.",
@@ -75,7 +73,6 @@
       ]
     },
     {
-      "id": "pacifico-central",
       "nombre": "Pacífico Central",
       "color": "#10B981",
       "descripcion": "Zona costera del Pacífico medio del país. Incluye destinos como Manuel Antonio y Jacó, combinando playa y bosque tropical.",
@@ -92,7 +89,6 @@
       ]
     },
     {
-      "id": "brunca",
       "nombre": "Brunca",
       "color": "#8B5CF6",
       "descripcion": "Región del Pacífico Sur, con la Península de Osa y el Parque Nacional Corcovado. Alberga una de las mayores concentraciones de biodiversidad del planeta.",
@@ -107,7 +103,6 @@
       ]
     },
     {
-      "id": "huetar-atlantica",
       "nombre": "Huetar Atlántica",
       "color": "#EF4444",
       "descripcion": "Comprende la provincia de Limón en el Caribe. Destaca por su cultura afrocaribeña, arrecifes de coral y destinos como Cahuita y Puerto Viejo.",
@@ -121,7 +116,6 @@
       ]
     },
     {
-      "id": "huetar-norte",
       "nombre": "Huetar Norte",
       "color": "#14B8A6",
       "descripcion": "Llanuras del norte del país, frontera con Nicaragua. Incluye el Volcán Arenal, La Fortuna y el humedal de Caño Negro.",

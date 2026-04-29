@@ -528,3 +528,62 @@ body.cargando {
     transform: scale(1.05);
     background-color: var(--color-acento);
 }
+
+
+
+
+/* ==========================================================================
+   AGREGAR ESTAS REGLAS AL FINAL DE TU css/global.css ACTUAL
+   No reemplaces el archivo, solo añadí estas clases.
+   ========================================================================== */
+
+/* Cabecera de la vista de listado: título a la izquierda, botón a la derecha */
+.listado-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.listado-header .titulo-region {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primario, #0F6E56);
+  border-bottom: 3px solid var(--color-primario, #0F6E56);
+  padding-bottom: 0.25rem;
+}
+
+/* Botón "Volver al mapa" estilo discreto y al extremo derecho */
+.btn-volver {
+  background: rgba(255, 255, 255, 0.06);
+  color: #d1d5db;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease, border-color 0.2s ease;
+  font-family: inherit;
+  flex-shrink: 0;
+}
+
+.btn-volver:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .listado-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .listado-header .titulo-region {
+    font-size: 1.5rem;
+  }
+}
