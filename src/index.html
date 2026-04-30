@@ -4,61 +4,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Guía Turística Multimedia de Costa Rica - Explora destinos turísticos del país">
+  <meta name="description" content="Guía Turística Multimedia de Costa Rica">
   <title>Guía Turística de Costa Rica</title>
 
   <link rel="stylesheet" href="css/global.css">
 
-  <script type="module" src="components/app-header.js"></script>
-  <script type="module" src="components/mapa-interactivo.js"></script>
-  <script type="module" src="components/destino-card.js"></script>
-  <script type="module" src="components/galeria-imagenes.js"></script>
-  <script type="module" src="components/audio-guia.js"></script>
-  <script type="module" src="components/destino-detalle.js"></script>
-
-  <script type="module" src="app.js"></script>
+  <!-- Punto de entrada de la aplicación -->
+  <script type="module" src="modules/app.js"></script>
 </head>
 
 <body>
 
-  <!-- Header sin active-region: la app arranca en el mapa -->
+  <!-- Header principal -->
   <app-header></app-header>
 
   <main id="app">
 
+    <!-- Vista: Mapa -->
     <section id="vista-mapa" class="vista activa">
       <div class="contenedor">
         <mapa-interactivo></mapa-interactivo>
       </div>
     </section>
 
+    <!-- Vista: Listado de destinos -->
     <section id="vista-listado" class="vista">
       <div class="contenedor">
 
         <div class="listado-header">
-          <h2 id="titulo-region" class="titulo-region">Pacífico Norte</h2>
-          <button id="btn-volver-mapa" class="btn-volver" aria-label="Volver al mapa">
-            ← Volver al mapa
-          </button>
+          <!-- Se llena dinámicamente desde app.js -->
+          <h2 id="titulo-region">Seleccione una región</h2>
+
+         <button id="btn-volver-mapa" class="btn-volver">← Volver al mapa</button>
         </div>
 
-        <div id="grid-destinos" class="grid-destinos">
-          <!-- Cards generadas dinámicamente desde app.js -->
-        </div>
+        <!-- Contenedor dinámico de cards -->
+        <div id="grid-destinos" class="grid-destinos"></div>
+
       </div>
     </section>
 
+    <!-- Vista: Detalle -->
     <section id="vista-detalle" class="vista">
       <div class="contenedor">
-        <button id="btn-volver" class="btn-volver">← Volver</button>
+
+        <button id="btn-volver" class="btn-volver" aria-label="Volver al listado">
+          ← Volver
+        </button>
+
+        <!-- Se renderiza dinámicamente -->
         <div id="contenedor-detalle"></div>
+
       </div>
     </section>
 
   </main>
 
   <footer class="app-footer">
-    <p>Guía Turística de Costa Rica · Proyecto IF7102 · UCR Sede Guanacaste 2026</p>
+    <p>Guía Turística de Costa Rica · IF7102 · UCR Guanacaste 2026</p>
   </footer>
 
 </body>
