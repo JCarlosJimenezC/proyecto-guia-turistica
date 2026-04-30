@@ -439,8 +439,7 @@ y la lista de cantones que la conforman (84 en total, agrupados según las
 
 | Rol | Integrante | Responsabilidades principales |
 |---|---|---|
-| Líder / Arquitecto de componentes |
-Juan Carlos Jiménez Castrillo - C33980 | Arquitectura, registro de Custom Elements, integración final |
+| Líder / Arquitecto de componentes |Juan Carlos Jiménez Castrillo - C33980 | Arquitectura, registro de Custom Elements, integración final |
 | Componentes de navegación | Joshua Obando Gonzalez - C35652 | `<app-header>`, flujo de eventos, `<mapa-interactivo>` |
 | Componentes de destino | Demian Ramírez Sandoval - C36462 | `<destino-card>`, `<destino-detalle>`, `<galeria-imagenes>` |
 | Productor multimedia | Maylo Daring Parra Aguirre - C35880 | Edición de imágenes/audio/video y estructura del JSON |
