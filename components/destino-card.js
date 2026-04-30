@@ -24,7 +24,7 @@
  *     region="Pacífico Norte">
  *   </destino-card>
  *
- * @author Grupo 5 - IF7102
+ * @author Grupo 1 - IF7102
  */
 
 class DestinoCard extends HTMLElement {

@@ -6,7 +6,7 @@
  * Eventos emitidos:
  *   - region-seleccionada detail: { regionNombre }
  *
- * @author Grupo 5 - IF7102
+ * @author Grupo 1 - IF7102
  */
 
 class MapaInteractivo extends HTMLElement {

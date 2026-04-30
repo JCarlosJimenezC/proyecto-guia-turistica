@@ -21,7 +21,7 @@
  *   <app-header active-region="Chorotega"></app-header>
  *   <app-header></app-header>  (ninguna región activa)
  *
- * @author Grupo 5 - IF7102
+ * @author Grupo 1 - IF7102
  */
 
 class AppHeader extends HTMLElement {
