@@ -54,7 +54,6 @@ class AppHeader extends HTMLElement {
     }
   }
 
-  // Devuelve null si no hay región activa (en vez de un default forzado)
   get activeRegion() {
     return this.getAttribute("active-region") || null;
   }
@@ -91,7 +90,6 @@ class AppHeader extends HTMLElement {
           flex-wrap: wrap;
         }
 
-        /* Logo: ahora es un botón clickeable que vuelve al mapa */
         .logo {
           display: flex;
           align-items: center;
@@ -181,29 +179,122 @@ class AppHeader extends HTMLElement {
           filter: brightness(1.1);
         }
 
+        /* ── HAMBURGUESA: solo visible en móvil ── */
+        .btn-hamburguesa {
+          display: none;
+          flex-direction: column;
+          justify-content: center;
+          gap: 5px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 8px;
+          border-radius: 8px;
+          transition: background 0.2s ease;
+          flex-shrink: 0;
+        }
+
+        .btn-hamburguesa:hover {
+          background: rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-hamburguesa span {
+          display: block;
+          width: 24px;
+          height: 2px;
+          background: #FFFFFF;
+          border-radius: 2px;
+          transition: all 0.25s ease;
+        }
+
+        /* Animación a X cuando el menú está abierto */
+        .btn-hamburguesa.abierto span:nth-child(1) {
+          transform: translateY(7px) rotate(45deg);
+        }
+        .btn-hamburguesa.abierto span:nth-child(2) {
+          opacity: 0;
+          transform: scaleX(0);
+        }
+        .btn-hamburguesa.abierto span:nth-child(3) {
+          transform: translateY(-7px) rotate(-45deg);
+        }
+
+        /* ── RESPONSIVE ── */
         @media (max-width: 768px) {
-          .header { padding: 0.75rem 1rem; }
-          .header-contenido { gap: 0.75rem; justify-content: flex-start; }
-          .logo { font-size: 1.1rem; width: 100%; }
-          .nav-regiones { width: 100%; justify-content: flex-start; }
-          .tab-region { padding: 0.4rem 1rem; font-size: 0.85rem; }
+          .header {
+            padding: 0.75rem 1rem;
+          }
+
+          .header-contenido {
+            flex-wrap: nowrap;
+            gap: 0.5rem;
+          }
+
+          /* Mostrar hamburguesa, ocultar nav horizontal */
+          .btn-hamburguesa {
+            display: flex;
+          }
+
+          .nav-regiones {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            background: linear-gradient(
+              135deg,
+              var(--color-primario-oscuro, #085041) 0%,
+              var(--color-primario, #0F6E56) 100%
+            );
+            padding: 1rem;
+            gap: 0.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 99;
+          }
+
+          .nav-regiones.abierta {
+            display: flex;
+          }
+
+          .tab-region {
+            text-align: left;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            justify-content: flex-start;
+          }
+
+          /* El header necesita position relative para que el menú se ancle */
+          .header {
+            position: sticky;
+            top: 0;
+          }
         }
 
         @media (max-width: 480px) {
-          .logo span:not(.logo-icono) { font-size: 1rem; }
+          .logo span:not(.logo-icono) {
+            font-size: 1rem;
+          }
         }
       </style>
 
       <header class="header" role="banner">
         <div class="header-contenido">
 
-          <!-- Logo: botón clickeable que vuelve al mapa -->
           <button class="logo" id="btn-logo" aria-label="Volver al mapa">
             <img class="logo-icono" src="assets/img/Logo.png" alt="">
             <span>Guía Turística CR</span>
           </button>
 
-          <nav class="nav-regiones" role="navigation" aria-label="Regiones turísticas">
+          <!-- Botón hamburguesa (solo visible en móvil) -->
+          <button class="btn-hamburguesa" id="btn-menu" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="nav-regiones" id="nav-regiones" role="navigation" aria-label="Regiones turísticas">
             ${this.regiones.map(r => `
               <button
                 class="tab-region ${r.region === this.activeRegion ? 'activa' : ''}"
@@ -228,6 +319,7 @@ class AppHeader extends HTMLElement {
     botones.forEach(boton => {
       boton.addEventListener("click", (ev) => {
         const region = ev.currentTarget.dataset.region;
+        this.cerrarMenu(); // cierra el menú al seleccionar
         this.seleccionarRegion(region);
       });
     });
@@ -236,11 +328,33 @@ class AppHeader extends HTMLElement {
     const btnLogo = this.shadowRoot.getElementById("btn-logo");
     if (btnLogo) {
       btnLogo.addEventListener("click", () => {
+        this.cerrarMenu();
         this.dispatchEvent(new CustomEvent("volver-mapa", {
           bubbles: true,
           composed: true
         }));
       });
+    }
+
+    // Hamburguesa: toggle del menú
+    const btnMenu = this.shadowRoot.getElementById("btn-menu");
+    const nav     = this.shadowRoot.getElementById("nav-regiones");
+    if (btnMenu && nav) {
+      btnMenu.addEventListener("click", () => {
+        const estaAbierto = nav.classList.toggle("abierta");
+        btnMenu.classList.toggle("abierto", estaAbierto);
+        btnMenu.setAttribute("aria-expanded", estaAbierto);
+      });
+    }
+  }
+
+  cerrarMenu() {
+    const btnMenu = this.shadowRoot.getElementById("btn-menu");
+    const nav     = this.shadowRoot.getElementById("nav-regiones");
+    if (nav)     nav.classList.remove("abierta");
+    if (btnMenu) {
+      btnMenu.classList.remove("abierto");
+      btnMenu.setAttribute("aria-expanded", "false");
     }
   }
 
