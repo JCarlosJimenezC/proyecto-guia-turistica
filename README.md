@@ -434,16 +434,15 @@ y la lista de cantones que la conforman (84 en total, agrupados según las
 > canónica.
 
 ---
-
 ## Equipo de trabajo (Grupo #1)
 
 | Rol | Integrante | Responsabilidades principales |
 |---|---|---|
-| Líder / Arquitecto de componentes |Juan Carlos Jiménez Castrillo - C33980 | Arquitectura, registro de Custom Elements, integración final |
-| Componentes de navegación | Joshua Obando Gonzalez - C35652 | `<app-header>`, flujo de eventos, `<mapa-interactivo>` |
-| Componentes de destino | Demian Ramírez Sandoval - C36462 | `<destino-card>`, `<destino-detalle>`, `<galeria-imagenes>` |
-| Productor multimedia | Maylo Daring Parra Aguirre - C35880 | Edición de imágenes/audio/video y estructura del JSON |
-| Diseño UI/UX | Kener Josué Sosa Rodríguez - C37730 | Estilos globales, paleta de colores, experiencia de usuario |
+| **Líder / Arquitecto de componentes** | Juan Carlos Jiménez Castrillo – C33980 | Definición de arquitectura, diseño de la estructura de Web Components, registro de Custom Elements e integración general de la aplicación |
+| **Componentes de navegación** | Joshua Obando González – C35652 | Desarrollo de `<app-header>` y `<mapa-interactivo>`, gestión del flujo de eventos y navegación entre vistas |
+| **Componentes de destino** | Demian Ramírez Sandoval – C36462 | Implementación de `<destino-card>`, `<destino-detalle>` y `<galeria-imagenes>`, manejo de render dinámico de datos |
+| **Productor multimedia** | Maylo Daring Parra Aguirre – C35880 | Producción y edición de recursos multimedia (imágenes, audio y video), y estructuración de los archivos JSON |
+| **Diseño UI/UX** | Kener Josué Sosa Rodríguez – C37730 | Definición de estilos globales, paleta de colores y experiencia de usuario (UI/UX) |
 
 > Todos los integrantes comprenden y pueden explicar cualquier Custom Element
 > durante la presentación.
