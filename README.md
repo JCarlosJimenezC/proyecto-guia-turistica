@@ -451,6 +451,31 @@ Juan Carlos Jiménez Castrillo - C33980 | Arquitectura, registro de Custom Eleme
 
 ---
 
+                ┌───────────────────────┐
+                │        MAPA           │
+                │  <mapa-interactivo>  │
+                └─────────┬────────────┘
+                          │
+          (clic en región │  "region-seleccionada")
+                          ▼
+                ┌───────────────────────┐
+                │       LISTADO         │
+                │  <destino-card> []   │
+                └───────┬───────┬──────┘
+                        │       │
+        (clic destino   │       │ botón volver mapa
+     "destino-selected")│       │ "volver-mapa"
+                        ▼       ▼
+                ┌───────────────────────┐
+                │       DETALLE         │
+                │ <destino-detalle>     │
+                └─────────┬────────────┘
+                          │
+               (botón volver)
+                          │
+                          ▼
+                      LISTADO
+---
 ## Créditos multimedia
 
 Las fuentes y licencias de cada imagen, audio y video utilizados se encuentran
