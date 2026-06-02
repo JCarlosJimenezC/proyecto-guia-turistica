@@ -24,9 +24,6 @@ body {
   line-height: 1.6;
   color: var(--color-texto);
   background-color: var(--color-fondo);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 img {
@@ -105,10 +102,16 @@ a {
 
 /* === LAYOUT PRINCIPAL === */
 main#app {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--altura-header, 70px));
   width: 100%;
   padding-top: var(--espacio-xl);
-  padding-bottom: var(--espacio-xl);
+}
+
+.vista.activa {
+  display: block;
+  flex: 1;
 }
 
 .contenedor {
@@ -120,7 +123,6 @@ main#app {
 /* === SISTEMA DE VISTAS === */
 .vista {
   display: none;
-  animation: fadeIn 0.3s ease;
 }
 
 .vista.activa {
@@ -130,11 +132,9 @@ main#app {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
