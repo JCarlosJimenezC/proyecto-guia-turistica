@@ -1,14 +1,3 @@
-/**
- * <mapa-interactivo>
- * Custom Element: Mapa interactivo de Costa Rica por cantones agrupados en
- * regiones socioeconómicas (MIDEPLAN).
- *
- * Eventos emitidos:
- *   - region-seleccionada detail: { regionNombre }
- *
- * @author Grupo 1 - IF7102
- */
-
 class MapaInteractivo extends HTMLElement {
 
   constructor() {
@@ -19,7 +8,7 @@ class MapaInteractivo extends HTMLElement {
     this._cantonToRegion = new Map();
     this._regionToPaths = new Map();
     this._regionActiva = null;
-    this._viewBoxMapa = null; // bounding box real de todos los cantones
+    this._viewBoxMapa = null;
   }
 
   async connectedCallback() {
@@ -101,7 +90,7 @@ class MapaInteractivo extends HTMLElement {
         #svg-container svg {
           width: 100%;
           height: auto;
-          max-height: 80vh;
+          max-height: 60vh;
           display: block;
         }
         #tooltip {
@@ -305,11 +294,9 @@ class MapaInteractivo extends HTMLElement {
     const btnReset = sr.getElementById("btn-reset");
     const itemsLeyenda = sr.querySelectorAll(".leyenda-item");
 
-    // Inyectar SVG inline
     svgContainer.innerHTML = this._svgText;
     const svgEl = svgContainer.querySelector("svg");
 
-    // Quitar dimensiones fijas de Inkscape
     svgEl.removeAttribute("width");
     svgEl.removeAttribute("height");
     svgEl.style.removeProperty("width");
@@ -324,10 +311,8 @@ class MapaInteractivo extends HTMLElement {
       });
     });
 
-    // Aplicar interacciones y colores
     this._aplicarInteracciones(svgEl, tooltip, panelOverlay, itemsLeyenda);
 
-    // Calcular el viewBox real basado en los paths coloreados (elimina el espacio vacío del SVG)
     this._ajustarViewBoxAlMapa(svgEl);
 
     itemsLeyenda.forEach(item => {
@@ -340,7 +325,6 @@ class MapaInteractivo extends HTMLElement {
     });
 
     btnReset.addEventListener("click", () => {
-      // Volver al viewBox del mapa completo (no el original de Inkscape)
       svgEl.setAttribute("viewBox", this._viewBoxMapa);
       this._regionActiva = null;
       this._quitarResaltado();
@@ -358,7 +342,6 @@ class MapaInteractivo extends HTMLElement {
     });
   }
 
-  // Calcula el bounding box de TODOS los cantones mapeados y lo usa como viewBox
   _ajustarViewBoxAlMapa(svgEl) {
     let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
 
@@ -376,11 +359,10 @@ class MapaInteractivo extends HTMLElement {
     });
 
     if (minX !== Infinity) {
-      const margin = 8;
+      const margin = 40;
       this._viewBoxMapa = `${minX - margin} ${minY - margin} ${maxX - minX + margin * 2} ${maxY - minY + margin * 2}`;
       svgEl.setAttribute("viewBox", this._viewBoxMapa);
     } else {
-      // Fallback al viewBox del JSON
       this._viewBoxMapa = this._config.viewBox;
       svgEl.setAttribute("viewBox", this._viewBoxMapa);
     }
@@ -437,29 +419,6 @@ class MapaInteractivo extends HTMLElement {
     const sr = this.shadowRoot;
     const paths = this._regionToPaths.get(region.nombre);
     if (!paths || paths.length === 0) return;
-
-    let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-    paths.forEach(p => {
-      try {
-        const b = p.getBBox();
-        if (b.width === 0 && b.height === 0) return;
-        minX = Math.min(minX, b.x);
-        minY = Math.min(minY, b.y);
-        maxX = Math.max(maxX, b.x + b.width);
-        maxY = Math.max(maxY, b.y + b.height);
-      } catch (e) { }
-    });
-
-    if (minX !== Infinity) {
-      const margin = 30;
-      // Espacio extra abajo para el overlay del panel
-      const vbParts = this._viewBoxMapa.split(" ").map(Number);
-      const panelReserve = vbParts[3] * 0.3;
-      svgEl.setAttribute(
-        "viewBox",
-        `${minX - margin} ${minY - margin} ${maxX - minX + margin * 2} ${maxY - minY + margin * 2 + panelReserve}`
-      );
-    }
 
     this._regionActiva = region.nombre;
     sr.getElementById("panel-color-dot").style.background = region.color;
