@@ -197,6 +197,36 @@ Ionut. (2021, agosto 29). *Samara Beach, Costa Rica* [Video]. YouTube. https://y
 
 ---
 
+### Videos descargados de YouTube — Región Central
+
+NotimexTV. (2017, abril 12). *Parque Volcán Poás, belleza natural de Costa Rica* [Video]. YouTube. https://youtu.be/Os73mOLyXCQ
+
+TicoFam Outdoors. (2020, marzo 5). *Museo, Iglesia Orosí* [Video]. YouTube. https://youtu.be/FP3FN1xDymI
+
+Tv Sur Pérez Zeledón. (2017, enero 16). *Cerro de la Muerte casi llegó a los cero grados en la madrugada de este lunes* [Video]. YouTube. https://youtu.be/bQbQNT34rUI
+
+---
+
+### Videos descargados de YouTube — Región Pacífico Central
+
+NotimexTV. (2017, abril 14). *Parque Manuel Antonio en Costa Rica, un puente entre la tierra y el mar* [Video]. YouTube. https://www.youtube.com/watch?v=ufCKZAvQZ5I
+
+NL.Droneshot. (2026, enero 27). *Jaco Coastline + El Miro 4K | Aerial Views of Costa Rica's Tropical Paradise* [Video]. YouTube. https://www.youtube.com/watch?v=T2HsXBbqNfM
+
+crysisgta360. (2011, octubre 10). *Playa la herradura* [Video]. YouTube. https://www.youtube.com/watch?v=AsO9EXnPIB8
+
+---
+
+### Videos descargados de YouTube — Región Brunca
+
+Wojciech Sulewski. (2019, marzo 23). *UVITA* [Video]. YouTube. https://www.youtube.com/watch?v=A2xzHfzXKP8
+
+Drake Bay Getaway. (2021, junio 11). *Caletas Beach Fly By* [Video]. YouTube. https://www.youtube.com/watch?v=3flgsIMrAVM
+
+Costa Tour USA. (2015, noviembre 21). *Isla del Caño* [Video]. YouTube. https://youtu.be/3oam6e_8QiI
+
+---
+
 ### Videos locales (Pexels)
 
 Los videos de los siguientes destinos provienen de Pexels. Licencia: [Pexels License](https://www.pexels.com/license/) — uso gratuito, sin atribución obligatoria.
@@ -205,15 +235,9 @@ Los videos de los siguientes destinos provienen de Pexels. Licencia: [Pexels Lic
 |---------|---------|--------|
 | `la-fortuna.mp4` | La Fortuna / Arenal | [Pexels – buscar aquí](https://www.pexels.com/search/videos/arenal%20volcano%20costa%20rica/) |
 | `cano-negro.mp4` | Caño Negro | [Pexels – buscar aquí](https://www.pexels.com/search/videos/costa%20rica%20wildlife/) |
-| `poas.mp4` | Volcán Poás | [Pexels – buscar aquí](https://www.pexels.com/search/videos/volcano%20costa%20rica/) |
-| `orosi.mp4` | Valle de Orosí | [Pexels – buscar aquí](https://www.pexels.com/search/videos/costa%20rica%20valley/) |
 | `cahuita.mp4` | Cahuita | [Pexels – buscar aquí](https://www.pexels.com/search/videos/caribbean%20costa%20rica/) |
 | `puerto-viejo.mp4` | Puerto Viejo | [Pexels – buscar aquí](https://www.pexels.com/search/videos/puerto%20viejo%20costa%20rica/) |
 | `tortuguero.mp4` | Tortuguero | [Pexels – buscar aquí](https://www.pexels.com/es-es/video/un-viaje-sereno-a-traves-del-bosque-de-manglares-30219147/) |
-| `manuel-antonio.mp4` | Manuel Antonio | [Pexels – buscar aquí](https://www.pexels.com/search/videos/manuel%20antonio/) |
-| `jaco.mp4` | Jacó | [Pexels – buscar aquí](https://www.pexels.com/search/videos/jaco%20beach%20costa%20rica/) |
-| `uvita.mp4` | Uvita | [Pexels – buscar aquí](https://www.pexels.com/search/videos/uvita%20costa%20rica/) |
-| `drake.mp4` | Bahía Drake | [Pexels – buscar aquí](https://www.pexels.com/search/videos/drake%20bay%20costa%20rica/) |
 
 ---
 
