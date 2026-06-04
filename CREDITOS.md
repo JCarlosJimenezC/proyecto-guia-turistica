@@ -227,17 +227,23 @@ Costa Tour USA. (2015, noviembre 21). *Isla del Caño* [Video]. YouTube. https:/
 
 ---
 
-### Videos locales (Pexels)
+### Videos descargados de YouTube — Región Huetar Norte
 
-Los videos de los siguientes destinos provienen de Pexels. Licencia: [Pexels License](https://www.pexels.com/license/) — uso gratuito, sin atribución obligatoria.
+NotimexTV. (2017, abril 12). *La Fortuna, Costa Rica* [Video]. YouTube. https://youtu.be/B7aY13j5hM0
 
-| Archivo | Destino | Fuente |
-|---------|---------|--------|
-| `la-fortuna.mp4` | La Fortuna / Arenal | [Pexels – buscar aquí](https://www.pexels.com/search/videos/arenal%20volcano%20costa%20rica/) |
-| `cano-negro.mp4` | Caño Negro | [Pexels – buscar aquí](https://www.pexels.com/search/videos/costa%20rica%20wildlife/) |
-| `cahuita.mp4` | Cahuita | [Pexels – buscar aquí](https://www.pexels.com/search/videos/caribbean%20costa%20rica/) |
-| `puerto-viejo.mp4` | Puerto Viejo | [Pexels – buscar aquí](https://www.pexels.com/search/videos/puerto%20viejo%20costa%20rica/) |
-| `tortuguero.mp4` | Tortuguero | [Pexels – buscar aquí](https://www.pexels.com/es-es/video/un-viaje-sereno-a-traves-del-bosque-de-manglares-30219147/) |
+David Vega. (2018, enero 12). *CAÑO NEGRO COSTA RICA - Amazing Wildlife* [Video]. YouTube. https://youtu.be/wXvQShAf388
+
+Thore Noernberg. (2015, diciembre 27). *Forest Hanging Bridge - Tirimbina Forest Reserve in Costa Rica* [Video]. YouTube. https://youtu.be/I65asEPoRRQ
+
+---
+
+### Videos descargados de YouTube — Región Huetar Atlántica
+
+ATEC ONG. (2021, noviembre 12). *Parque Nacional Cahuita tu experiencia Naturalista* [Video]. YouTube. https://youtu.be/EJYp7hSsIh4
+
+Kriss Mars. (2018, diciembre 6). *Un día en Puerto Viejo* [Video]. YouTube. https://youtu.be/nyDG5bNqUmo
+
+Explorer Spirit. (2023, agosto 5). *Tortuguero jungle boat ride - Costa Rica* [Video]. YouTube. https://youtu.be/N31Apb-qQ70
 
 ---
 
