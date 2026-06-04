@@ -278,6 +278,111 @@
       "actividades": ["Senderismo en selva", "Avistamiento de fauna", "Snorkel", "Tours en bote", "Buceo"],
       "lat": 8.6953,
       "lng": -83.6708
+    },
+    {
+      "id": "chorotega-003",
+      "nombre": "Sámara",
+      "region": "Chorotega",
+      "zona_turistica": "Pacífico Norte",
+      "provincia": "Guanacaste",
+      "canton": "Nicoya",
+      "descripcion": "Playa Sámara es un paraíso de aguas tranquilas en la costa pacífica de Guanacaste, protegida por un arrecife coralino que la convierte en una de las playas más seguras del país. A diferencia de otros destinos costeros más concurridos, Sámara conserva un ambiente relajado y auténtico que combina la vida cotidiana tica con el turismo. Sus condiciones ideales para el surf principiante, el kayak y el buceo, junto con sus coloridos atardeceres y gastronomía local, la convierten en un destino imperdible del Pacífico Norte.",
+      "imagen_portada": "assets/img/samara.webp",
+      "galeria": [
+        "assets/img/samara-1.webp",
+        "assets/img/samara-2.webp",
+        "assets/img/samara-3.webp",
+        "assets/img/samara-4.webp"
+      ],
+      "audio": "assets/audio/samara-guia.mp3",
+      "video": "assets/video/samara.mp4",
+      "actividades": ["Surf", "Snorkel", "Kayak", "Buceo", "Avistamiento de tortugas"],
+      "lat": 9.8827,
+      "lng": -85.5316
+    },
+    {
+      "id": "central-003",
+      "nombre": "Cerro de la Muerte",
+      "region": "Central",
+      "zona_turistica": "Ruta de los Santos",
+      "provincia": "San José",
+      "canton": "Dota",
+      "descripcion": "El Cerro de la Muerte, con 3.491 metros sobre el nivel del mar, es el punto más alto de la carretera Interamericana en Costa Rica. Este imponente páramo de altura es reconocido mundialmente como uno de los mejores sitios para observar al quetzal resplandeciente en su hábitat natural. Sus bosques nubosos perpetuamente envueltos en niebla, sus vistas panorámicas de la Cordillera de Talamanca y su rica biodiversidad de flora y fauna de altura hacen de este lugar un destino único para el ecoturismo y la fotografía de naturaleza.",
+      "imagen_portada": "assets/img/cerro-muerte.webp",
+      "galeria": [
+        "assets/img/cerro-muerte-1.webp",
+        "assets/img/cerro-muerte-2.webp",
+        "assets/img/cerro-muerte-3.webp",
+        "assets/img/cerro-muerte-4.webp"
+      ],
+      "audio": "assets/audio/cerro-muerte-guia.mp3",
+      "video": "assets/video/cerro-muerte.mp4",
+      "actividades": ["Avistamiento de quetzal", "Senderismo", "Fotografía de naturaleza", "Birdwatching", "Observación de flora"],
+      "lat": 9.5439,
+      "lng": -83.7669
+    },
+    {
+      "id": "huetar-norte-003",
+      "nombre": "Reserva Biológica Tirimbina",
+      "region": "Huetar Norte",
+      "zona_turistica": "Llanuras del Norte",
+      "provincia": "Heredia",
+      "canton": "Sarapiquí",
+      "descripcion": "La Reserva Biológica Tirimbina es un tesoro natural ubicado a orillas del río Sarapiquí, en las llanuras del norte de Costa Rica. Sus famosos puentes colgantes sobre el río y senderos que atraviesan bosque primario y secundario ofrecen una experiencia inmersiva en la selva tropical lluviosa. La reserva es reconocida por sus tours especializados de murciélagos, chocolate y ranas venenosas, además de contar con una extraordinaria diversidad de aves, anfibios y mariposas que la convierten en un referente del ecoturismo en la región de Sarapiquí.",
+      "imagen_portada": "assets/img/tirimbina.webp",
+      "galeria": [
+        "assets/img/tirimbina-1.webp",
+        "assets/img/tirimbina-2.webp",
+        "assets/img/tirimbina-3.webp",
+        "assets/img/tirimbina-4.webp"
+      ],
+      "audio": "assets/audio/tirimbina-guia.mp3",
+      "video": "assets/video/tirimbina.mp4",
+      "actividades": ["Puentes colgantes", "Senderismo", "Avistamiento de aves", "Tour de murciélagos", "Tour de cacao"],
+      "lat": 10.4258,
+      "lng": -84.1167
+    },
+    {
+      "id": "brunca-003",
+      "nombre": "Reserva Biológica Isla del Caño",
+      "region": "Brunca",
+      "zona_turistica": "Pacífico Sur",
+      "provincia": "Puntarenas",
+      "canton": "Osa",
+      "descripcion": "La Reserva Biológica Isla del Caño es un santuario marino y terrestre de 200 hectáreas ubicado en el Océano Pacífico, frente a la Bahía Drake en la Península de Osa. Sus aguas cristalinas con visibilidad de hasta 20 metros albergan una biodiversidad marina extraordinaria: tiburones de punta blanca, tortugas marinas, manta rayas y delfines. La isla también preserva vestigios de culturas precolombinas en forma de esferas de piedra, añadiendo una dimensión arqueológica única a su impresionante riqueza natural.",
+      "imagen_portada": "assets/img/isla-caño.webp",
+      "galeria": [
+        "assets/img/isla-caño-1.webp",
+        "assets/img/isla-caño-2.webp",
+        "assets/img/isla-caño-3.webp",
+        "assets/img/isla-caño-4.webp"
+      ],
+      "audio": "assets/audio/isla-caño-guia.mp3",
+      "video": "assets/video/isla-cano.mp4",
+      "actividades": ["Snorkel", "Buceo", "Avistamiento de fauna marina", "Kayak", "Arqueología precolombina"],
+      "lat": 8.7042,
+      "lng": -83.9008
+    },
+    {
+      "id": "pacifico-central-004",
+      "nombre": "Playa Herradura",
+      "region": "Pacífico Central",
+      "zona_turistica": "Pacífico Central",
+      "provincia": "Puntarenas",
+      "canton": "Garabito",
+      "descripcion": "Playa Herradura es una bahía de forma semicircular con aguas tranquilas ubicada en el Pacífico Central costarricense, entre la popular Jacó y el resort Los Sueños. Sus aguas calmadas y protegidas, libres del oleaje fuerte típico de otras playas del Pacífico, la hacen ideal para familias, buceo, snorkel y deportes acuáticos. El Marina Los Sueños, uno de los mejores puertos deportivos de Centroamérica, convierte a Herradura en el punto de partida preferido para la pesca deportiva de torneo y los tours de ballenas y delfines.",
+      "imagen_portada": "assets/img/herradura.webp",
+      "galeria": [
+        "assets/img/herradura-1.webp",
+        "assets/img/herradura-2.webp",
+        "assets/img/herradura-3.webp",
+        "assets/img/herradura-4.webp"
+      ],
+      "audio": "assets/audio/herradura-guia.mp3",
+      "video": "assets/video/herradura.mp4",
+      "actividades": ["Pesca deportiva", "Snorkel", "Buceo", "Kayak", "Natación"],
+      "lat": 9.6589,
+      "lng": -84.6406
     }
   ]
 }
