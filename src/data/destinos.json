@@ -169,6 +169,33 @@
       "lng": -82.7548
     },
     {
+      "id": "huetar-atlantica-003",
+      "nombre": "Parque Nacional Tortuguero",
+      "region": "Huetar Atlántica",
+      "zona_turistica": "Caribe",
+      "provincia": "Limón",
+      "canton": "Pococí",
+      "descripcion": "Conocido como el 'Amazonas de Costa Rica', Tortuguero es famoso por sus canales navegables y por ser el sitio de anidación más importante del Caribe para la tortuga verde. Es un refugio de biodiversidad donde el bosque se encuentra con el mar, ofreciendo una experiencia inmersiva en la naturaleza salvaje.",
+      "imagen_portada": "assets/img/tortuguero.webp",
+      "galeria": [
+        "assets/img/tortuguero-1.webp",
+        "assets/img/tortuguero-2.webp",
+        "assets/img/tortuguero-3.webp",
+        "assets/img/tortuguero-4.webp"
+      ],
+      "audio": "assets/audio/tortuguero-guia.mp3",
+      "video": "assets/video/tortuguero.mp4",
+      "actividades": [
+        "Tour de canales en bote",
+        "Observación de desove de tortugas",
+        "Senderismo",
+        "Kayaking",
+        "Avistamiento de aves"
+      ],
+      "lat": 10.5333,
+      "lng": -83.5167
+    },
+    {
       "id": "pacifico-central-001",
       "nombre": "Manuel Antonio",
       "region": "Pacífico Central",
