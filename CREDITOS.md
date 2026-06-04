@@ -48,38 +48,6 @@
 
 [Puerto Viejo] [Fotografía]. (s.f.). Todo Bien Mamá. https://todobienmama.com/puerto-viejo/
 
-<<<<<<< HEAD
-| Archivo | Fuente |
-|---------|--------|
-| `Uvita.webp` | [La República – Isla Uvita Albatros](https://www.larepublica.net/noticia/isla-uvita-se-convierte-en-el-destino-ideal-para-la-anidacion-del-albatros-pico-moreno) |
-| `Uvita-1.webp` | [La República – Avistamiento de Ballenas](https://www.larepublica.net/noticia/avistamiento-de-ballenas-seria-de-interes-publico-para-impulsar-turismo-y-economia-del-pacifico) |
-| `Uvita-2.webp` | [Viator – Snorkeling Paddleboarding Kayaking](https://www.viator.com/en-ZA/tours/San-Juan/Snorkeling-Paddleboarding-or-Kayaking-Guided-Experience/d903-119061P1) |
-| `Uvita-3.webp` | [La República – Rutas de Senderismo a Cataratas](https://www.larepublica.net/noticia/descubra-la-belleza-oculta-12-asombrosas-rutas-de-senderismo-que-lo-llevaran-a-epicas-cataratas-en-costa-rica) |
-| `Uvita-4.webp` | [Ballena Tales – Costa Ballena](https://ballenatales.com/es/condiciones-de-ensueno-en-costa-ballena/) |
-
----
-
-## Videos
-
-Los videos utilizados en esta aplicación provienen de fuentes de libre uso.
-Licencia: [Pexels License](https://www.pexels.com/license/) — uso gratuito, sin atribución obligatoria.
-
-| Archivo | Destino | Fuente |
-|---------|---------|--------|
-| `tamarindo.mp4` | Tamarindo | [Pexels – buscar aquí](https://www.pexels.com/search/videos/tamarindo%20costa%20rica/) |
-| `rincon-vieja.mp4` | Rincón de la Vieja | [Pexels – buscar aquí](https://www.pexels.com/search/videos/rincon%20de%20la%20vieja/) |
-| `la-fortuna.mp4` | La Fortuna / Arenal | [Pexels – buscar aquí](https://www.pexels.com/search/videos/arenal%20volcano%20costa%20rica/) |
-| `cano-negro.mp4` | Caño Negro | [Pexels – buscar aquí](https://www.pexels.com/search/videos/costa%20rica%20wildlife/) |
-| `poas.mp4` | Volcán Poás | [Pexels – buscar aquí](https://www.pexels.com/search/videos/volcano%20costa%20rica/) |
-| `orosi.mp4` | Valle de Orosí | [Pexels – buscar aquí](https://www.pexels.com/search/videos/costa%20rica%20valley/) |
-| `cahuita.mp4` | Cahuita | [Pexels – buscar aquí](https://www.pexels.com/search/videos/caribbean%20costa%20rica/) |
-| `puerto-viejo.mp4` | Puerto Viejo | [Pexels – buscar aquí](https://www.pexels.com/search/videos/puerto%20viejo%20costa%20rica/) |
-| `manuel-antonio.mp4` | Manuel Antonio | [Pexels – buscar aquí](https://www.pexels.com/search/videos/manuel%20antonio/) |
-| `jaco.mp4` | Jacó | [Pexels – buscar aquí](https://www.pexels.com/search/videos/jaco%20beach%20costa%20rica/) |
-| `uvita.mp4` | Uvita | [Pexels – buscar aquí](https://www.pexels.com/search/videos/uvita%20costa%20rica/) |
-| `drake.mp4` | Bahía Drake | [Pexels – buscar aquí](https://www.pexels.com/search/videos/drake%20bay%20costa%20rica/) |
-| `tortuguero.mp4` | Tortuguero | [Pexels – buscar aquí](https://www.pexels.com/es-es/video/un-viaje-sereno-a-traves-del-bosque-de-manglares-30219147/) |
-=======
 [Puerto Viejo de noche] [Fotografía]. (s.f.). Teletica. https://www.teletica.com/entretenimiento/puerto-viejo-cuando-cae-la-noche-el-caribe-que-baila-al-ritmo-del-reggae-y-las-olas_395838
 
 [Cocomar comida caribeña] [Fotografía]. (s.f.). Puerto Viejo Satellite. https://www.puertoviejosatellite.com/es/puerto-viejo/cocomar-comida-caribena/
@@ -114,29 +82,194 @@ Licencia: [Pexels License](https://www.pexels.com/license/) — uso gratuito, si
 
 [Condiciones de ensueño en Costa Ballena] [Fotografía]. (s.f.). Ballena Tales. https://ballenatales.com/es/condiciones-de-ensueno-en-costa-ballena/
 
+---
+
+### Sámara (chorotega-003)
+
+Reddit. (2018). *Samara Beach, Guanacaste, Costa Rica* [Fotografía]. Reddit. https://i.redd.it/ht00d3fmlzs01.jpg
+
+Sun Chasing Travelers. (2024). *Costa Rica coastal landscape* [Fotografía]. Sun Chasing Travelers. https://www.sunchasingtravelers.com/wp-content/uploads/2024/01/Montezuma-02366-2048x1366.jpg
+
+Responsible Travel. (2024). *Costa Rica — Guanacaste coastal views* [Fotografía]. Responsible Travel. https://www.responsibletravel.com/imagesclient/L_164490.jpg
+
+Interbus Online. (2022). *Samara — Pacific North beach panoramic* [Fotografía]. Interbus Online. https://www.interbusonline.com/wp-content/uploads/2022/11/Rectangle-52.png
+
+Pixabay. (2019). *Costa Rica coastline wildlife* [Fotografía]. Pixabay. https://cdn.pixabay.com/photo/2019/09/11/05/42/costa-rica-4467843_1280.jpg
+
+---
+
+### Cerro de la Muerte (central-003)
+
+Altiplano Voyage. (2019). *Cerro de la Muerte — Costa Rica mountain peak* [Fotografía]. Altiplano Voyage. https://www.altiplano-voyage.com/assets/costa-rica/sites-a-visiter/cerro-de-la-muerte_1.jpg?1695121344
+
+Visitar Costa Rica. (2024). *Cerro de la Muerte — Panoramic mountain view* [Fotografía]. Visitar Costa Rica. https://images.visitarcostarica.com/cerro-de-la-muerte-costa-rica.jpg
+
+Reddit. (2019). *Cerro de la Muerte — High altitude landscape* [Fotografía]. Reddit. https://i.redd.it/wbrx1irknjsy.jpg
+
+Take Your Backpack. (2024). *Costa Rica unique site — Cerro de la Muerte* [Fotografía]. Take Your Backpack. https://www.takeyourbackpack.com/CONTENT/googlePhotos/1200/costa-rica-unique-site-cerro-de-la-muerte.webp
+
+Go Visit Costa Rica. (2024). *Cerro de la Muerte mountain tops* [Fotografía]. Go Visit Costa Rica. https://www.govisitcostarica.com/images/photos/full-Cerro-de-la-Muerte-mountain-tops.jpg
+
+---
+
+### Reserva Biológica Tirimbina (huetar-norte-003)
+
+Schools Worldwide. (2024). *Tirimbina Biological Reserve — Rainforest banner* [Fotografía]. Schools Worldwide. https://www.schoolsworldwide.co.uk/images/banners/latin_america_costa_rica_tirimbina_banner-narrow.jpg
+
+TripAdvisor. (2023). *Reserva Biológica Tirimbina — Hanging bridges* [Fotografía]. TripAdvisor. https://media-cdn.tripadvisor.com/media/photo-s/25/5c/2c/36/reserva-biologica-tirimbina.jpg
+
+Two Weeks in Costa Rica. (2014). *Reserva Biológica Tirimbina — Tropical rainforest* [Fotografía]. Two Weeks in Costa Rica. https://www.twoweeksincostarica.com/wp-content/uploads/2014/08/Reserva-Biologica-Tirimbina.jpg
+
+Costa Rican Natural History. (2024). *Tirimbina — Wildlife and vegetation* [Fotografía]. Costa Rican Natural History. https://costaricanaturalhistory.weebly.com/uploads/1/2/2/4/12248585/9866704_orig.jpg
+
+Costa Rica For All. (2019). *Tirimbina — Hanging bridge canopy view* [Fotografía]. Costa Rica For All. https://www.costaricaforall.com/wp-content/uploads/2019/09/tirimbina-puent.jpg
+
+---
+
+### Reserva Biológica Isla del Caño (brunca-003)
+
+Conocedores. (2019). *Costa Rica — Isla del Caño aerial view* [Fotografía]. Conocedores. https://conocedores.com/wp-content/uploads/2019/05/costa-rica-isla-del-cano-15052019in3.jpg
+
+Costa Rica Dive and Surf. (2025). *Isla del Caño — Marine landscape panoramic* [Fotografía]. Costa Rica Dive and Surf. https://www.costaricadiveandsurf.com/wp-content/uploads/2025/02/Isla-del-cano-picture-2048x1152.jpg
+
+Viajeros Ocultos. (2021). *Isla del Caño — Underwater coral reef* [Fotografía]. Viajeros Ocultos. https://viajerosocultos.com/wp-content/uploads/2021/01/33333254005_9a489f25ae_k-1536x1145.jpg
+
+Viajeros Ocultos. (2021). *Isla del Caño — Marine fauna and diving* [Fotografía]. Viajeros Ocultos. https://viajerosocultos.com/wp-content/uploads/2021/01/33332689865_a3270c800a_k.jpg
+
+Costa Rica Dive and Surf. (2025). *Isla del Caño — Sea turtle in reef* [Fotografía]. Costa Rica Dive and Surf. https://www.costaricadiveandsurf.com/wp-content/uploads/2025/02/turtle-cano-island-1024x578.jpg
+
+---
+
+### Playa Herradura (pacifico-central-004)
+
+Bing Images. (2024). *Playa Herradura — Horseshoe bay aerial* [Fotografía]. Bing Images. https://tse4.mm.bing.net/th/id/OIP.bKTdViVA9cqX3mwTc4yiKgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3
+
+Costa Rica Org. (2017). *Herradura — Beach and bay panoramic* [Fotografía]. Costa Rica Org. https://costarica.org/wp-content/uploads/2017/03/herraduraslider1.jpeg
+
+Costa Rica Org. (2018). *Playa Herradura — Marina and coastline* [Fotografía]. Costa Rica Org. https://costarica.org/wp-content/uploads/2018/05/Playa-Herradura-9.jpg
+
+Costa Rica Org. (2017). *Herradura — Sunset bay view* [Fotografía]. Costa Rica Org. https://costarica.org/wp-content/uploads/2017/03/herraduraslider5.jpg
+
+Anywhere Costa Rica. (2015). *Playa Herradura — Beach landscape* [Fotografía]. Anywhere Costa Rica. https://d12bf6kmgd5ome.cloudfront.net/2015/05/playa-herradura-01.jpg
+
+---
+
+## Videos
+
+### Videos descargados de YouTube — Región Chorotega
+
+Witch's Rock Surf Camp. (2023, diciembre 12). *Witch's Rock Surf Camp: From Sand to Surf in Seconds - Tamarindo, Costa Rica Surf Camp* [Video]. YouTube. https://youtu.be/YCfX8YVX6Bw
+
+Thiessen, C. (2021, diciembre 19). *Rincón de la Vieja* [Video]. YouTube. https://youtu.be/RmlV15M_b-I
+
+Ionut. (2021, agosto 29). *Samara Beach, Costa Rica* [Video]. YouTube. https://youtu.be/0K7t7aSEc-Y
+
+---
+
+### Videos locales (Pexels)
+
+Los videos de los siguientes destinos provienen de Pexels. Licencia: [Pexels License](https://www.pexels.com/license/) — uso gratuito, sin atribución obligatoria.
+
+| Archivo | Destino | Fuente |
+|---------|---------|--------|
+| `la-fortuna.mp4` | La Fortuna / Arenal | [Pexels – buscar aquí](https://www.pexels.com/search/videos/arenal%20volcano%20costa%20rica/) |
+| `cano-negro.mp4` | Caño Negro | [Pexels – buscar aquí](https://www.pexels.com/search/videos/costa%20rica%20wildlife/) |
+| `poas.mp4` | Volcán Poás | [Pexels – buscar aquí](https://www.pexels.com/search/videos/volcano%20costa%20rica/) |
+| `orosi.mp4` | Valle de Orosí | [Pexels – buscar aquí](https://www.pexels.com/search/videos/costa%20rica%20valley/) |
+| `cahuita.mp4` | Cahuita | [Pexels – buscar aquí](https://www.pexels.com/search/videos/caribbean%20costa%20rica/) |
+| `puerto-viejo.mp4` | Puerto Viejo | [Pexels – buscar aquí](https://www.pexels.com/search/videos/puerto%20viejo%20costa%20rica/) |
+| `tortuguero.mp4` | Tortuguero | [Pexels – buscar aquí](https://www.pexels.com/es-es/video/un-viaje-sereno-a-traves-del-bosque-de-manglares-30219147/) |
+| `manuel-antonio.mp4` | Manuel Antonio | [Pexels – buscar aquí](https://www.pexels.com/search/videos/manuel%20antonio/) |
+| `jaco.mp4` | Jacó | [Pexels – buscar aquí](https://www.pexels.com/search/videos/jaco%20beach%20costa%20rica/) |
+| `uvita.mp4` | Uvita | [Pexels – buscar aquí](https://www.pexels.com/search/videos/uvita%20costa%20rica/) |
+| `drake.mp4` | Bahía Drake | [Pexels – buscar aquí](https://www.pexels.com/search/videos/drake%20bay%20costa%20rica/) |
+
+---
+
 ## Audios
 
-Parra Aguirre, M. D. (2026). Guía de audio de Cahuita [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1iSCOhnZ9SjZnGzfHxoTGtSYY11Fd628r/view?usp=sharing
+### Herramienta de generación
 
-Parra Aguirre, M. D. (2026). Guía de audio de Caño Negro [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1UawH733FCR_EjZ8iTehAwrinA8hcS51N/view?usp=sharing
+SpeechGen. (s.f.). *Generador de voz en línea — Convierte texto a voz* [Software]. SpeechGen. https://speechgen.io/es/
 
-Parra Aguirre, M. D. (2026). Guía de audio de Drake [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1ic_laRnDUcWYWdDMx9jQv5__h3MbJdjf/view?usp=sharing
+[Equipo del proyecto]. (2026). *Carpeta de audios — Guía turística multimedia Costa Rica* [Carpeta de Google Drive]. Google Drive. https://drive.google.com/drive/folders/1Jb7QnwfhcJ6L_bHvwSsCZssaHM8DMqWN?usp=sharing
 
-Parra Aguirre, M. D. (2026). Guía de audio de Jacó [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1NcECT27D710YGCeJTWEVW-TRQ6w-G382/view?usp=sharing
+### Audios generados con Google Text-to-Speech
 
-Parra Aguirre, M. D. (2026). Guía de audio de La Fortuna [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1ZCyFgYnWYOI14IyYRIvvuoShDP8-z2At/view?usp=sharing
+Parra Aguirre, M. D. (2026). *Guía de audio de Cahuita* [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1iSCOhnZ9SjZnGzfHxoTGtSYY11Fd628r/view?usp=sharing
 
-Parra Aguirre, M. D. (2026). Guía de audio de Manuel Antonio [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1NAAYMyEIOUG20BbfG54topBi2SOy5VFp/view?usp=sharing
+Parra Aguirre, M. D. (2026). *Guía de audio de Caño Negro* [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1UawH733FCR_EjZ8iTehAwrinA8hcS51N/view?usp=sharing
 
-Parra Aguirre, M. D. (2026). Guía de audio de Orosí [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1q2BahDxKaVdy0yp2LFMGBQEchxj2hfOT/view?usp=sharing
+Parra Aguirre, M. D. (2026). *Guía de audio de Drake* [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1ic_laRnDUcWYWdDMx9jQv5__h3MbJdjf/view?usp=sharing
 
-Parra Aguirre, M. D. (2026). Guía de audio de Puerto Viejo [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/15hD3Pt_leF3TgfpGgvKCYaSy897M_-DM/view?usp=sharing
+Parra Aguirre, M. D. (2026). *Guía de audio de Jacó* [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1NcECT27D710YGCeJTWEVW-TRQ6w-G382/view?usp=sharing
 
-Parra Aguirre, M. D. (2026). Guía de audio de Rincón de la Vieja [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/109wS3JqajPeeIBlWgKQvwDWuZIjQDZpV/view?usp=sharing
+Parra Aguirre, M. D. (2026). *Guía de audio de La Fortuna* [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1ZCyFgYnWYOI14IyYRIvvuoShDP8-z2At/view?usp=sharing
 
-Parra Aguirre, M. D. (2026). Guía de audio de Tamarindo [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1_YRSAQUrd2nDXoZzDiN2ito_xxErOJey/view?usp=sharing
+Parra Aguirre, M. D. (2026). *Guía de audio de Manuel Antonio* [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1NAAYMyEIOUG20BbfG54topBi2SOy5VFp/view?usp=sharing
 
-Parra Aguirre, M. D. (2026). Guía de audio de Uvita [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1e5pC8Qga2n1TiPi8xScvUOMABBBTEg0m/view?usp=sharing
+Parra Aguirre, M. D. (2026). *Guía de audio de Orosí* [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1q2BahDxKaVdy0yp2LFMGBQEchxj2hfOT/view?usp=sharing
 
-Parra Aguirre, M. D. (2026). Guía de audio de Volcán Poás [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/19WPEfSev_gKWCy4uVEBFRpY6AZYu82K1/view?usp=sharing
->>>>>>> 080cfdc9b1ec1500624f0f5b5b562ea3ab245bf5
+Parra Aguirre, M. D. (2026). *Guía de audio de Puerto Viejo* [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/15hD3Pt_leF3TgfpGgvKCYaSy897M_-DM/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). *Guía de audio de Rincón de la Vieja* [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/109wS3JqajPeeIBlWgKQvwDWuZIjQDZpV/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). *Guía de audio de Tamarindo* [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1_YRSAQUrd2nDXoZzDiN2ito_xxErOJey/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). *Guía de audio de Uvita* [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1e5pC8Qga2n1TiPi8xScvUOMABBBTEg0m/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). *Guía de audio de Volcán Poás* [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/19WPEfSev_gKWCy4uVEBFRpY6AZYu82K1/view?usp=sharing
+
+### Audios generados con SpeechGen
+
+SpeechGen. (2026). *samara-guia.mp3 — Audio guía turística Sámara* [Archivo de audio]. Google Drive. https://drive.google.com/file/d/1jN0YcG7-j0zixP5BnbzKkax09xqXtC3_/view?usp=drive_link
+
+SpeechGen. (2026). *cerro-muerte-guia.mp3 — Audio guía turística Cerro de la Muerte* [Archivo de audio]. Google Drive. https://drive.google.com/file/d/1IQX6iN4OZWc4dTVZGMKXy12jU-uaiFh3/view?usp=drive_link
+
+SpeechGen. (2026). *tirimbina-guia.mp3 — Audio guía turística Reserva Tirimbina* [Archivo de audio]. Google Drive. https://drive.google.com/file/d/1AADGFSWbRQfCI5qe88_mfu9xR_dYa095/view?usp=drive_link
+
+SpeechGen. (2026). *isla-cano-guia.mp3 — Audio guía turística Isla del Caño* [Archivo de audio]. Google Drive. https://drive.google.com/file/d/1HlwnL7F9OpeVC4Q144DG_NPzI5fE8KXq/view?usp=drive_link
+
+SpeechGen. (2026). *herradura-guia.mp3 — Audio guía turística Playa Herradura* [Archivo de audio]. Google Drive. https://drive.google.com/file/d/10EzuA-ta5zFqIx2bLUxkEYe4jkRFWIPY/view?usp=drive_link
+
+---
+
+## Fuentes turísticas generales consultadas
+
+Anywhere.com. (2024). *Ojochal, Playas Tortuga & Ventana — Travel Guide*. Anywhere. https://www.anywhere.com/costa-rica/destinations/ojochal-playa-tortugua-ventana
+
+Ballena Tales Magazine. (2017). *Playa Tortuga, Ojochal, Costa Ballena*. Ballena Tales Magazine. https://www.ballenatales.com/es/osa-costa-rica/pura-vida/playas/playa-tortuga/
+
+Contenido Tico. (2021). *Playa Herradura, Cantón de Garabito, Puntarenas*. Contenido Tico. https://contenidotico.com/provincia-puntarenas/canton-garabito/playa-herradura/
+
+Costa Rica Dive and Surf. (2024). *5 cosas que puedes hacer en Ojochal Costa Rica*. Costa Rica Dive and Surf. https://www.costaricadiveandsurf.com/es/5-cosas-que-puedes-hacer-en-ojochal-costa-rica/
+
+Costa Rica Dive and Surf. (2025). *Isla del Caño — Información turística*. Costa Rica Dive and Surf. https://www.costaricadiveandsurf.com/es/isla-del-cano-informacion-turistica/
+
+Costa Rica Info Link. (2024). *Reserva Biológica Isla del Caño, Costa Rica*. Costa Rica Info Link. https://costaricainfolink.com/es/reserva-biologica-isla-del-cano-costa-rica/
+
+Costa Rica Org. (2019). *Herradura — Central Pacific Beach & Marina*. Costa Rica Org. https://costarica.org/beaches/central-pacific/herradura/
+
+EcuRed. (2024). *Isla del Caño*. EcuRed. http://www.ecured.cu/index.php/Isla_del_ca%C3%B1o
+
+EcuRed. (2024). *Ojochal (Costa Rica)*. EcuRed. https://www.ecured.cu/Ojochal_(Costa_Rica)
+
+EcuRed. (2024). *Playa Herradura*. EcuRed. https://www.ecured.cu/Playa_Herradura
+
+Gobierno Local Osa. (2024). *Playa Ventanas, Ojochal — Turismo rural comunitario*. Gobierno Local Osa. https://www.gobiernolocalosa.go.cr/turismo/info.php?item=40
+
+Gobierno Local Osa. (2024). *Reserva Biológica Isla del Caño — Turismo rural comunitario*. Gobierno Local Osa. https://www.gobiernolocalosa.go.cr/turismo/info.php?item=72
+
+Go Visit Costa Rica. (2024). *Playa Herradura — Guía de la ciudad*. Go Visit Costa Rica. https://www.govisitcostarica.co.cr/region/city.asp?cID=307
+
+Magical Sunset Costa Rica. (2024). *Playa Herradura en Costa Rica*. Magical Sunset Costa Rica. https://magicalsunsetcostarica.com/playa-herradura/
+
+SINAC. (2024). *Reserva Biológica Isla del Caño*. Sistema Nacional de Áreas de Conservación. https://www.sinac.go.cr/ES/ac/acosa/Paginas/IsladelCa%C3%B1o.aspx
+
+Visit Costa Rica. (2024). *La maravillosa Isla del Caño*. Visit Costa Rica. https://es.visitcostarica.com/blog/wonderful-isla-del-cano
+
+Visitar Costa Rica. (2024). *Playa Herradura, Costa Rica*. Visitar Costa Rica. https://www.visitarcostarica.com/playa-herradura
+
+Wikipedia. (2026). *Isla del Caño*. Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Isla_del_Ca%C3%B1o
+
+Wikipedia. (2026). *Playa Herradura, Costa Rica*. Wikipedia. https://en.wikipedia.org/wiki/Playa_Herradura,_Costa_Rica
