@@ -4,9 +4,10 @@
 > Universidad de Costa Rica · Sede Regional de Guanacaste · Recinto de Liberia
 > Carrera de Informática Empresarial · **Grupo #1**
 
-Aplicación web interactiva que permite explorar destinos turísticos de Costa Rica
-a través de un mapa cantonal navegable, contenido multimedia (audio, video,
-galería de imágenes) y datos cargados dinámicamente desde archivos JSON.
+Aplicación web interactiva que permite explorar **18 destinos turísticos** de
+Costa Rica distribuidos en **6 regiones**, a través de un mapa cantonal navegable,
+contenido multimedia (galería de imágenes, audio guía y video por destino) y
+datos cargados dinámicamente desde archivos JSON.
 Construida íntegramente con **Web Components nativos** (Custom Elements,
 Shadow DOM, HTML Templates y ES Modules), sin frameworks ni librerías externas.
 
@@ -37,7 +38,7 @@ La aplicación se compone de tres vistas que se intercambian dinámicamente:
 |---|---|
 | **Mapa** | Mapa SVG de Costa Rica con los 84 cantones agrupados por las 6 regiones socioeconómicas (MIDEPLAN). Hover/click para resaltar regiones; al seleccionar una se hace zoom y aparecen puntos animados con los destinos de esa región. |
 | **Listado** | Cuadrícula de tarjetas (`<destino-card>`) con los destinos filtrados por la región activa. |
-| **Detalle** | Vista completa de un destino con galería navegable, descripción, lista de actividades y reproductor de audio nativo. |
+| **Detalle** | Vista completa de un destino con galería navegable, descripción, lista de actividades, reproductor de audio y reproductor de video con controles personalizados. |
 
 ---
 
@@ -74,7 +75,8 @@ proyecto-guia-turistica/
 │   │   ├── destino-card.js
 │   │   ├── destino-detalle.js
 │   │   ├── galeria-imagenes.js
-│   │   └── audio-guia.js
+│   │   ├── audio-guia.js
+│   │   └── video-destino.js
 │   ├── assets/
 │   │   ├── img/                      ← Imágenes de destinos + Cantones_de_Costa_Rica.svg
 │   │   ├── audio/                    ← Audio guías por destino
@@ -331,9 +333,10 @@ encapsula sus estilos mediante Shadow DOM.
 | `<app-header>` | `active-region` | `region-selected`, `volver-mapa` | Barra superior con logo (clickeable, vuelve al mapa) y tabs por región. |
 | `<mapa-interactivo>` | — | `region-seleccionada`, `destino-selected` | Mapa SVG cantonal con coloreado por región, zoom dinámico y puntos animados de los destinos. |
 | `<destino-card>` | `destino-id`, `nombre`, `imagen`, `region` | `destino-selected` | Tarjeta resumen con imagen, nombre y región. |
-| `<destino-detalle>` | (recibe el destino vía propiedad `.destino`) | — | Vista completa del destino. Integra `<galeria-imagenes>` y `<audio-guia>`. |
+| `<destino-detalle>` | (recibe el destino vía propiedad `.destino`) | — | Vista completa del destino. Integra `<galeria-imagenes>`, `<audio-guia>` y `<video-destino>`. |
 | `<galeria-imagenes>` | `imagenes` (JSON serializado) | — | Galería con navegación anterior/siguiente. |
 | `<audio-guia>` | `src`, `label` | — | Reproductor de audio personalizado con play/pause y barra de progreso. |
+| `<video-destino>` | `src`, `poster`, `label` | — | Reproductor de video con miniatura, controles personalizados (play/pause, barra de progreso, volumen, pantalla completa) y spinner de carga. |
 
 ---
 
@@ -371,7 +374,7 @@ Usuario hace clic en una región del mapa
             ▼
    <destino-detalle>
        contiene
-   <galeria-imagenes> + <audio-guia>
+   <galeria-imagenes> + <audio-guia> + <video-destino>
 ```
 
 Los puntos del mapa también pueden emitir `destino-selected` directamente,
@@ -383,8 +386,19 @@ ofreciendo un atajo desde el mapa hasta el detalle del destino.
 
 ### `data/destinos.json`
 
-Catálogo de destinos turísticos. Cada destino contiene los campos pedidos
-en el enunciado más algunos campos auxiliares para el mapa:
+Catálogo de **18 destinos** distribuidos en 6 regiones (3 por región):
+
+| Región | Destinos |
+|---|---|
+| Chorotega | Tamarindo, Rincón de la Vieja, Sámara |
+| Huetar Norte | La Fortuna y Volcán Arenal, Caño Negro, Reserva Biológica Tirimbina |
+| Central | Volcán Poás, Valle de Orosí, Cerro de la Muerte |
+| Huetar Atlántica | Cahuita, Puerto Viejo de Talamanca, Parque Nacional Tortuguero |
+| Pacífico Central | Manuel Antonio, Jacó, Playa Herradura |
+| Brunca | Uvita, Bahía Drake y Corcovado, Reserva Biológica Isla del Caño |
+
+Cada destino contiene los campos pedidos en el enunciado más algunos campos
+auxiliares para el mapa:
 
 ```json
 {
@@ -478,8 +492,11 @@ y la lista de cantones que la conforman (84 en total, agrupados según las
 
 Las fuentes y licencias de cada imagen, audio y video utilizados se encuentran
 documentadas en el archivo [`CREDITOS.md`](./CREDITOS.md) en la raíz del
-repositorio. Todos los recursos son de libre uso (Creative Commons o dominio
-público) o de producción propia del grupo.
+repositorio, con referencias en formato **APA 7**.
+
+- **Imágenes**: obtenidas de fuentes públicas (Wikipedia, Pixabay, sitios de turismo oficiales) con sus respectivas referencias.
+- **Audios**: generados con [SpeechGen](https://speechgen.io/es/) y almacenados en Google Drive del equipo.
+- **Videos**: descargados de YouTube (18 videos, uno por destino) y almacenados localmente en `assets/video/` para cumplir con el requisito de ejecución sin dependencia de internet.
 
 ---
 
