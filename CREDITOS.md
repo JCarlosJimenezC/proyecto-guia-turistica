@@ -107,7 +107,7 @@ J. Amill Santiago. unsplash. https://unsplash.com/es/fotos/el-agua-cae-debajo-de
 
 [Jaco Costa Rica] [Fotografía]. (s.f.). MyCostaRica. costarica. https://costarica.org/beaches/central-pacific/jaco/
 
-[Bay Drake Costa Rica] [Fotografía]. (s.f.). MyCostaRica. costarica. https://costarica.org/es/playas/pacifico-sur/bahia-drake/
+[Bahia Drake Costa Rica] [Fotografía]. (s.f.). MyCostaRica. costarica. https://costarica.org/es/playas/pacifico-sur/bahia-drake/
 
 [Corcovado Costa Rica] [Fotografía]. (s.f.). MyCostaRica. costarica. https://costarica.org/es/parques-nacionales/corcovado/
 
