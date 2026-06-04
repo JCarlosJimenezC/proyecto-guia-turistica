@@ -273,7 +273,7 @@ class MapaInteractivo extends HTMLElement {
             </div>
             <div class="panel-acciones">
               <button id="btn-ver" class="btn-ver">Ver destinos</button>
-              <button id="btn-reset" class="btn-reset">x Reiniciar</button>
+              <button id="btn-reset" class="btn-reset">Reiniciar</button>
             </div>
           </div>
         </div>

@@ -239,13 +239,11 @@ class DestinoDetalle extends HTMLElement {
           <!-- COLUMNA IZQUIERDA -->
           <div class="seccion">
             <div class="seccion-titulo">
-              <span class="icono" aria-hidden="true">&#128269;</span>
               Acerca de
             </div>
             <p class="descripcion">${d.descripcion || 'Sin descripción disponible.'}</p>
 
             <div class="seccion-titulo" style="margin-top: 1rem;">
-              <span class="icono" aria-hidden="true">&#127912;</span>
               Actividades
             </div>
             <ul class="actividades">
@@ -253,7 +251,6 @@ class DestinoDetalle extends HTMLElement {
             </ul>
 
             <div class="seccion-titulo" style="margin-top: 1rem;">
-              <span class="icono" aria-hidden="true">&#128506;</span>
               Ubicación
             </div>
             <div class="info-grid">
@@ -275,13 +272,11 @@ class DestinoDetalle extends HTMLElement {
           <!-- COLUMNA DERECHA -->
           <div class="seccion">
             <div class="seccion-titulo">
-              <span class="icono" aria-hidden="true">&#128444;</span>
               Galería de imágenes
             </div>
             <galeria-imagenes imagenes='${galeriaImgs}'></galeria-imagenes>
 
             <div class="seccion-titulo" style="margin-top: 1.5rem;">
-              <span class="icono" aria-hidden="true">&#127897;</span>
               Audio guía
             </div>
            <audio-guia
@@ -291,7 +286,6 @@ class DestinoDetalle extends HTMLElement {
 
             ${d.video ? `
             <div class="seccion-titulo" style="margin-top: 1.5rem;">
-              <span class="icono" aria-hidden="true">&#127909;</span>
               Video del destino
             </div>
             <video-destino
