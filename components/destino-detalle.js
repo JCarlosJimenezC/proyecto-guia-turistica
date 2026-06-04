@@ -236,6 +236,7 @@ class DestinoDetalle extends HTMLElement {
         <!-- CONTENIDO PRINCIPAL (2 columnas) -->
         <div class="contenido-grid">
 
+          <!-- íconos decorativos eliminados de los títulos de sección -->
           <!-- COLUMNA IZQUIERDA -->
           <div class="seccion">
             <div class="seccion-titulo">
