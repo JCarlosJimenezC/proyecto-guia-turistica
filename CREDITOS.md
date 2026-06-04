@@ -1,95 +1,54 @@
-# Créditos de Imágenes
+# Créditos
 
-A continuación se detallan las fuentes de las imágenes utilizadas en este proyecto.
+## Imágenes
 
----
+[Parque Nacional Cahuita] [Fotografía]. (s.f.). Wikipedia. https://es.wikipedia.org/wiki/Parque_nacional_Cahuita
 
-## Cahuita
+[Snorkel y Parque Nacional Cahuita] [Fotografía]. (s.f.). Cahuita.cr. https://www.cahuita.cr/snorkel-y-parque-nacional/
 
-| Archivo | Fuente |
-|---------|--------|
-| `cahuita.webp` | [Wikipedia – Parque Nacional Cahuita](https://es.wikipedia.org/wiki/Parque_nacional_Cahuita) |
-| `Cahuita-1.webp` | [Cahuita.cr – Snorkel y Parque Nacional](https://www.cahuita.cr/snorkel-y-parque-nacional/) |
-| `Cahuita-2.webp` | [Horizontes – Costa Rica's Green Season](https://horizontes.com/costa-ricas-green-season-travel-secret-that-you-should-know/) |
-| `Cahuita-3.webp` | [Tour Guide Costa Rica – Parque Cahuita Caminata](https://tourguide-costarica.com/es/producto/parque-cahuita-caminata-entrada-cahuita/) |
-| `Cahuita-4.webp` | [UCR – Afrodescendencia Costarricense](https://www.ucr.ac.cr/noticias/2022/8/30/la-ucr-esta-comprometida-con-la-afrodescendencia-costarricense.html) |
+[Temporada verde en Cahuita] [Fotografía]. (s.f.). Horizontes. https://horizontes.com/costa-ricas-green-season-travel-secret-that-you-should-know/
 
----
+[Caminata en Parque Cahuita] [Fotografía]. (s.f.). Tour Guide Costa Rica. https://tourguide-costarica.com/es/producto/parque-cahuita-caminata-entrada-cahuita/
 
-## Manuel Antonio
+[Afrodescendencia costarricense en Cahuita] [Fotografía]. (s.f.). Universidad de Costa Rica. https://www.ucr.ac.cr/noticias/2022/8/30/la-ucr-esta-comprometida-con-la-afrodescendencia-costarricense.html
 
-| Archivo | Fuente |
-|---------|--------|
-| `Manuel-antonio.webp` | [La República – Reformas en Manuel Antonio](https://www.larepublica.net/noticia/reformas-en-manuel-antonio-representan-la-explotacion-turistica-de-un-parque-nacional-segun-expertos-de-la-una) |
-| `Manuel-antonio-1.webp` | [TripAdvisor – Manuel Antonio Trekking](https://www.tripadvisor.es/Attraction_Review-g309274-d16659493-Reviews-Manuel_Antonio_Trekking_and_Waterfalls_Tours-Manuel_Antonio_Quepos_Province_of_P.html) |
-| `Manuel-antonio-2.webp` | [Freepik – Puntarenas Costa Rica](https://www.freepik.es/fotos-vectores-gratis/puntarenas-costa-rica) |
-| `Manuel-antonio-3.webp` | [TripAdvisor – Tucanes Tours](https://www.tripadvisor.es/Attraction_Review-g309274-d1036649-Reviews-Tucanes_Tours-Manuel_Antonio_Quepos_Province_of_Puntarenas.html) |
-| `Manuel-antonio-4.webp` | [Physis.cr – Wildlife and Bird Photography](https://physis.cr/costa-rica-a-paradise-for-wildlife-and-bird-photography/) |
+[Iglesia Colonial de Orosí] [Fotografía]. (s.f.). Wikipedia. https://es.wikipedia.org/wiki/Archivo:Iglesia_Colonial_de_Orosi,_Cartago,_Costa_Rica_-_panoramio.jpg
 
----
+[Restaurantes de Orosí] [Fotografía]. (s.f.). Orosi Lodge. https://www.orosilodge.com/portfolio_category/restaurants/
 
-## Orosí
+[Galería de Hacienda Orosí] [Fotografía]. (s.f.). Hacienda Orosí. https://haciendaorosi.com/gallery/
 
-| Archivo | Fuente |
-|---------|--------|
-| `Orosi.webp` | [La República – Ruta de Senderismo NatGeo](https://www.larepublica.net/noticia/en-costa-rica-hay-una-ruta-de-senderismo-alabada-por-natgeo-que-cruza-de-mar-a-mar) |
-| `Orosi-1.webp` | [Orosi Lodge – Restaurants](https://www.orosilodge.com/portfolio_category/restaurants/) |
-| `Orosi-2.webp` | [Hacienda Orosí – Gallery](https://haciendaorosi.com/gallery/) |
-| `Orosi-3.webp` | [La República – L'Etape Costa Rica](https://www.larepublica.net/noticia/dylan-jimenez-y-gloriana-quesada-brillaron-en-la-competencia-letape-costa-rica) |
-| `Orosi-4.webp` | [Wikipedia – Iglesia Colonial de Orosí](https://es.wikipedia.org/wiki/Archivo:Iglesia_Colonial_de_Orosi,_Cartago,_Costa_Rica_-_panoramio.jpg) |
+[Ruta de senderismo alabada por NatGeo] [Fotografía]. (s.f.). La República. https://www.larepublica.net/noticia/en-costa-rica-hay-una-ruta-de-senderismo-alabada-por-natgeo-que-cruza-de-mar-a-mar
 
----
+[Competencia L'Etape Costa Rica] [Fotografía]. (s.f.). La República. https://www.larepublica.net/noticia/dylan-jimenez-y-gloriana-quesada-brillaron-en-la-competencia-letape-costa-rica
 
-## Volcán Poás
+[Trekking en Manuel Antonio] [Fotografía]. (s.f.). TripAdvisor. https://www.tripadvisor.es/Attraction_Review-g309274-d16659493-Reviews-Manuel_Antonio_Trekking_and_Waterfalls_Tours-Manuel_Antonio_Quepos_Province_of_P.html
 
-| Archivo | Fuente |
-|---------|--------|
-| `Poas.webp` | [Facebook SINAC – Parque Nacional Volcán Poás](https://www.facebook.com/cr.sinac/posts/por-riesgo-inminente-de-colapso-de-puente-de-accesoparque-nacional-volc%C3%A1n-po%C3%A1s-c/1320357156801750/) |
-| `Poas-1.webp` | [La República – Paseos en la GAM](https://www.larepublica.net/noticia/conozca-propuestas-de-paseos-en-la-gam-para-aprovechar-el-feriado) |
-| `Poas-2.webp` | [Turismo Sostenible – Código de Conducta](https://turismo-sostenible.co.cr/iniciativas/codigo-de-conducta/) |
-| `Poas-3.webp` | [Physis.cr – Caño Negro Wildlife Refuge](https://physis.cr/cano-negro-wildlife-refuge/) |
-| `Poas-4.webp` | [La República – Volcán Poás Cerrado](https://www.larepublica.net/noticia/parque-nacional-volcan-poas-seguira-cerrado-al-publico-a-pesar-de-reduccion-de-peligrosidad) |
+[Puntarenas Costa Rica] [Fotografía]. (s.f.). Freepik. https://www.freepik.es/fotos-vectores-gratis/puntarenas-costa-rica
 
----
+[Tucanes Tours en Manuel Antonio] [Fotografía]. (s.f.). TripAdvisor. https://www.tripadvisor.es/Attraction_Review-g309274-d1036649-Reviews-Tucanes_Tours-Manuel_Antonio_Quepos_Province_of_Puntarenas.html
 
-## Puerto Viejo
+[Fauna y fotografía de aves] [Fotografía]. (s.f.). Physis.cr. https://physis.cr/costa-rica-a-paradise-for-wildlife-and-bird-photography/
 
-| Archivo | Fuente |
-|---------|--------|
-| `Puerto-viejo.webp` | [Facebook Al Pie Del Deporte – BBC Puerto Viejo](https://www.facebook.com/AlPieDelDeporte/posts/la-bbc-resalta-historia-y-presente-de-puertoviejo-en-lim%C3%B3n-httpsowlyax6v50x6gqy/1224248509734106/) |
-| `Puerto-viejo-1.webp` | [KimKim – Adventure Activities Costa Rica](https://www.kimkim.com/c/best-adventure-activities-to-do-in-costa-rica) |
-| `Puerto-viejo-2.webp` | [Todo Bien Mamá – Puerto Viejo](https://todobienmama.com/puerto-viejo/) |
-| `Puerto-viejo-3.webp` | [Teletica – Puerto Viejo de Noche](https://www.teletica.com/entretenimiento/puerto-viejo-cuando-cae-la-noche-el-caribe-que-baila-al-ritmo-del-reggae-y-las-olas_395838) |
-| `Puerto-viejo-4.webp` | [Puerto Viejo Satellite – Cocomar](https://www.puertoviejosatellite.com/es/puerto-viejo/cocomar-comida-caribena/) |
+[Reformas en Manuel Antonio] [Fotografía]. (s.f.). La República. https://www.larepublica.net/noticia/reformas-en-manuel-antonio-representan-la-explotacion-turistica-de-un-parque-nacional-segun-expertos-de-la-una
 
----
+[Parque Nacional Volcán Poás] [Fotografía]. (s.f.). SINAC. https://www.facebook.com/cr.sinac/posts/por-riesgo-inminente-de-colapso-de-puente-de-accesoparque-nacional-volc%C3%A1n-po%C3%A1s-c/1320357156801750/
 
-## Rincón de la Vieja
+[Paseos en la GAM] [Fotografía]. (s.f.). La República. https://www.larepublica.net/noticia/conozca-propuestas-de-paseos-en-la-gam-para-aprovechar-el-feriado
 
-| Archivo | Fuente |
-|---------|--------|
-| `Rincon-vieja.webp` | [La República – Lago del Cráter](https://www.larepublica.net/noticia/lago-del-crater-del-rincon-de-la-vieja-ha-decrecido-20-metros-desde-2017) |
-| `Rincon-vieja-1.webp` | [La República – Cobro del IVA en Parques](https://www.larepublica.net/noticia/cobro-del-iva-en-entradas-a-parques-nacionales-se-congelaria) |
-| `Rincon-vieja-2.webp` | [La República – Aguas Termales Semana Santa](https://www.larepublica.net/noticia/sector-con-aguas-termales-del-parque-rincon-de-la-vieja-reabre-para-semana-santa) |
-| `Rincon-vieja-3.webp` | [La República – Deporte y Dinosaurios](https://www.larepublica.net/noticia/rincon-de-la-vieja-ofrece-deporte-y-dinosaurios-a-vacacionistas) |
-| `Rincon-vieja-4.webp` | [Booking.com – Vida Aventura Nature Park](https://www.booking.com/hotel/cr/vida-aventura-nature-park.es.html) |
+[Código de conducta turística] [Fotografía]. (s.f.). Turismo Sostenible. https://turismo-sostenible.co.cr/iniciativas/codigo-de-conducta/
 
----
+[Caño Negro Wildlife Refuge] [Fotografía]. (s.f.). Physis.cr. https://physis.cr/cano-negro-wildlife-refuge/
 
-## Tamarindo
+[Volcán Poás cerrado al público] [Fotografía]. (s.f.). La República. https://www.larepublica.net/noticia/parque-nacional-volcan-poas-seguira-cerrado-al-publico-a-pesar-de-reduccion-de-peligrosidad
 
-| Archivo | Fuente |
-|---------|--------|
-| `Tamarindo.webp` | [La República – Policía Turística Papagayo](https://www.larepublica.net/noticia/turistas-del-golfo-de-papagayo-tendran-mayor-seguridad-con-nueva-delegacion-de-policia-turistica) |
-| `Tamarindo-1.webp` | [La República – Circuito Nacional de Surf](https://www.larepublica.net/noticia/surfistas-limonenses-dominaron-el-arranque-del-circuito-nacional-de-surf) |
-| `Tamarindo-2.webp` | [The Gilded Iguana – Snorkeling](https://www.thegildediguana.com/experiences/snorkeling/) |
-| `Tamarindo-3.webp` | [The Costa Rica Tour Site – Pesca Deportiva](https://www.thecostaricatoursite.com/es/tamarindo/Pesca_Deportiva.php) |
-| `Tamarindo-4.webp` | [Pura Vida University – Baulas Guanacaste](https://www.puravidauniversity.eu/guanacaste/baulas_guanacaste_costa-rica/) |
+[BBC resalta historia de Puerto Viejo] [Fotografía]. (s.f.). Al Pie Del Deporte. https://www.facebook.com/AlPieDelDeporte/posts/la-bbc-resalta-historia-y-presente-de-puertoviejo-en-lim%C3%B3n-httpsowlyax6v50x6gqy/1224248509734106/
 
----
+[Actividades de aventura en Costa Rica] [Fotografía]. (s.f.). KimKim. https://www.kimkim.com/c/best-adventure-activities-to-do-in-costa-rica
 
-## Uvita
+[Puerto Viejo] [Fotografía]. (s.f.). Todo Bien Mamá. https://todobienmama.com/puerto-viejo/
 
+<<<<<<< HEAD
 | Archivo | Fuente |
 |---------|--------|
 | `Uvita.webp` | [La República – Isla Uvita Albatros](https://www.larepublica.net/noticia/isla-uvita-se-convierte-en-el-destino-ideal-para-la-anidacion-del-albatros-pico-moreno) |
@@ -120,3 +79,64 @@ Licencia: [Pexels License](https://www.pexels.com/license/) — uso gratuito, si
 | `uvita.mp4` | Uvita | [Pexels – buscar aquí](https://www.pexels.com/search/videos/uvita%20costa%20rica/) |
 | `drake.mp4` | Bahía Drake | [Pexels – buscar aquí](https://www.pexels.com/search/videos/drake%20bay%20costa%20rica/) |
 | `tortuguero.mp4` | Tortuguero | [Pexels – buscar aquí](https://www.pexels.com/es-es/video/un-viaje-sereno-a-traves-del-bosque-de-manglares-30219147/) |
+=======
+[Puerto Viejo de noche] [Fotografía]. (s.f.). Teletica. https://www.teletica.com/entretenimiento/puerto-viejo-cuando-cae-la-noche-el-caribe-que-baila-al-ritmo-del-reggae-y-las-olas_395838
+
+[Cocomar comida caribeña] [Fotografía]. (s.f.). Puerto Viejo Satellite. https://www.puertoviejosatellite.com/es/puerto-viejo/cocomar-comida-caribena/
+
+[Lago del cráter del Rincón de la Vieja] [Fotografía]. (s.f.). La República. https://www.larepublica.net/noticia/lago-del-crater-del-rincon-de-la-vieja-ha-decrecido-20-metros-desde-2017
+
+[Cobro del IVA en parques nacionales] [Fotografía]. (s.f.). La República. https://www.larepublica.net/noticia/cobro-del-iva-en-entradas-a-parques-nacionales-se-congelaria
+
+[Aguas termales del Parque Rincón de la Vieja] [Fotografía]. (s.f.). La República. https://www.larepublica.net/noticia/sector-con-aguas-termales-del-parque-rincon-de-la-vieja-reabre-para-semana-santa
+
+[Deporte y dinosaurios en Rincón de la Vieja] [Fotografía]. (s.f.). La República. https://www.larepublica.net/noticia/rincon-de-la-vieja-ofrece-deporte-y-dinosaurios-a-vacacionistas
+
+[Vida Aventura Nature Park] [Fotografía]. (s.f.). Booking.com. https://www.booking.com/hotel/cr/vida-aventura-nature-park.es.html
+
+[Policía turística en Golfo de Papagayo] [Fotografía]. (s.f.). La República. https://www.larepublica.net/noticia/turistas-del-golfo-de-papagayo-tendran-mayor-seguridad-con-nueva-delegacion-de-policia-turistica
+
+[Circuito nacional de surf] [Fotografía]. (s.f.). La República. https://www.larepublica.net/noticia/surfistas-limonenses-dominaron-el-arranque-del-circuito-nacional-de-surf
+
+[Snorkeling en Tamarindo] [Fotografía]. (s.f.). The Gilded Iguana. https://www.thegildediguana.com/experiences/snorkeling/
+
+[Pesca deportiva en Tamarindo] [Fotografía]. (s.f.). The Costa Rica Tour Site. https://www.thecostaricatoursite.com/es/tamarindo/Pesca_Deportiva.php
+
+[Baulas Guanacaste] [Fotografía]. (s.f.). Pura Vida University. https://www.puravidauniversity.eu/guanacaste/baulas_guanacaste_costa-rica/
+
+[Isla Uvita] [Fotografía]. (s.f.). La República. https://www.larepublica.net/noticia/isla-uvita-se-convierte-en-el-destino-ideal-para-la-anidacion-del-albatros-pico-moreno
+
+[Avistamiento de ballenas] [Fotografía]. (s.f.). La República. https://www.larepublica.net/noticia/avistamiento-de-ballenas-seria-de-interes-publico-para-impulsar-turismo-y-economia-del-pacifico
+
+[Snorkeling, paddleboarding y kayaking] [Fotografía]. (s.f.). Viator. https://www.viator.com/en-ZA/tours/San-Juan/Snorkeling-Paddleboarding-or-Kayaking-Guided-Experience/d903-119061P1
+
+[Rutas de senderismo a cataratas] [Fotografía]. (s.f.). La República. https://www.larepublica.net/noticia/descubra-la-belleza-oculta-12-asombrosas-rutas-de-senderismo-que-lo-llevaran-a-epicas-cataratas-en-costa-rica
+
+[Condiciones de ensueño en Costa Ballena] [Fotografía]. (s.f.). Ballena Tales. https://ballenatales.com/es/condiciones-de-ensueno-en-costa-ballena/
+
+## Audios
+
+Parra Aguirre, M. D. (2026). Guía de audio de Cahuita [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1iSCOhnZ9SjZnGzfHxoTGtSYY11Fd628r/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). Guía de audio de Caño Negro [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1UawH733FCR_EjZ8iTehAwrinA8hcS51N/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). Guía de audio de Drake [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1ic_laRnDUcWYWdDMx9jQv5__h3MbJdjf/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). Guía de audio de Jacó [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1NcECT27D710YGCeJTWEVW-TRQ6w-G382/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). Guía de audio de La Fortuna [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1ZCyFgYnWYOI14IyYRIvvuoShDP8-z2At/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). Guía de audio de Manuel Antonio [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1NAAYMyEIOUG20BbfG54topBi2SOy5VFp/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). Guía de audio de Orosí [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1q2BahDxKaVdy0yp2LFMGBQEchxj2hfOT/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). Guía de audio de Puerto Viejo [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/15hD3Pt_leF3TgfpGgvKCYaSy897M_-DM/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). Guía de audio de Rincón de la Vieja [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/109wS3JqajPeeIBlWgKQvwDWuZIjQDZpV/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). Guía de audio de Tamarindo [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1_YRSAQUrd2nDXoZzDiN2ito_xxErOJey/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). Guía de audio de Uvita [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/1e5pC8Qga2n1TiPi8xScvUOMABBBTEg0m/view?usp=sharing
+
+Parra Aguirre, M. D. (2026). Guía de audio de Volcán Poás [Archivo de audio]. Generado con Google Text-to-Speech. https://drive.google.com/file/d/19WPEfSev_gKWCy4uVEBFRpY6AZYu82K1/view?usp=sharing
+>>>>>>> 080cfdc9b1ec1500624f0f5b5b562ea3ab245bf5
