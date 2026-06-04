@@ -82,6 +82,37 @@
 
 [Condiciones de ensueño en Costa Ballena] [Fotografía]. (s.f.). Ballena Tales. https://ballenatales.com/es/condiciones-de-ensueno-en-costa-ballena/
 
+[Iglesia en La Fortuna con Volcán Arenal] [Fotografía]. (29 de junio de 2018). Maxine27. Pixabay. https://pixabay.com/es/photos/fortuna-costa-rica-volc%C3%A1n-3506594/
+
+[Pajaro colibri La Fortuna, San Carlos] [Fotografía]. (2 de marzo de 2019). millabates. Pixabay. https://pixabay.com/es/photos/costa-rica-colibr%C3%AD-naturaleza-4030774/
+
+[Puente colgante La Fortuna, San Carlos] [Fotografía]. (9 de marzo de 2017). jeremy924. Pixabay. https://pixabay.com/es/photos/costa-rica-colibr%C3%AD-naturaleza-4030774/
+
+[Catarata La Fortuna, San Carlos] [Fotografía]. (2 de enero de 2014). danielgarrett11. Pixabay. https://pixabay.com/es/photos/costa-rica-colibr%C3%AD-naturaleza-4030774/
+
+[Termales La Fortuna, San Carlos] [Fotografía]. (5 de agosto de 2021). Ve al perfil de J. Amill Santiago
+J. Amill Santiago. unsplash. https://unsplash.com/es/fotos/el-agua-cae-debajo-del-puente-de-madera-marron-durante-el-dia-O1zXtcwOPx8
+
+[Caño Negro Los Chiles] [Fotografía]. (s.f.). wikipedia. wikipedia. https://es.wikipedia.org/wiki/Ca%C3%B1o_Negro_(distrito)#/media/Archivo:Ca%C3%B1o_Negro.jpg
+
+[jaco costa Rica] [Fotografía]. (s.f.). wikipedia. wikipedia. https://es.wikipedia.org/wiki/Jac%C3%B3#/media/Archivo:Playa_Jac%C3%B3.jpg
+
+[Ave en cano negro costa Rica] [Fotografía]. (s.f.). Paniagua,R. SINAC. https://www.sinac.go.cr/EN-US/ac/ACAHN/rnvscn/Gallery/Soterrey.JPG
+
+[Aves en cano negro costa Rica] [Fotografía]. (s.f.). Paniagua,R. SINAC. https://www.sinac.go.cr/EN-US/ac/ACAHN/rnvscn/Gallery/Ca%C3%B1o%20Negro%203.jpg
+
+[Zopilote en cano negro costa Rica] [Fotografía]. (s.f.). Paniagua,R. SINAC. https://www.sinac.go.cr/EN-US/ac/ACAHN/rnvscn/Gallery/Zopilote%20Cabecigualdo.JPG
+
+[Gavilan en cano negro costa Rica] [Fotografía]. (s.f.). Paniagua,R. SINAC. https://www.sinac.go.cr/EN-US/ac/ACAHN/rnvscn/Gallery/G%C3%A1vilan%20de%20Ci%C3%A9nega.JPG
+
+[Jaco Costa Rica] [Fotografía]. (s.f.). MyCostaRica. costarica. https://costarica.org/beaches/central-pacific/jaco/
+
+[Bay Drake Costa Rica] [Fotografía]. (s.f.). MyCostaRica. costarica. https://costarica.org/es/playas/pacifico-sur/bahia-drake/
+
+[Corcovado Costa Rica] [Fotografía]. (s.f.). MyCostaRica. costarica. https://costarica.org/es/parques-nacionales/corcovado/
+
+
+
 ---
 
 ### Sámara (chorotega-003)
