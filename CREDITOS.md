@@ -97,3 +97,26 @@ A continuación se detallan las fuentes de las imágenes utilizadas en este proy
 | `Uvita-2.webp` | [Viator – Snorkeling Paddleboarding Kayaking](https://www.viator.com/en-ZA/tours/San-Juan/Snorkeling-Paddleboarding-or-Kayaking-Guided-Experience/d903-119061P1) |
 | `Uvita-3.webp` | [La República – Rutas de Senderismo a Cataratas](https://www.larepublica.net/noticia/descubra-la-belleza-oculta-12-asombrosas-rutas-de-senderismo-que-lo-llevaran-a-epicas-cataratas-en-costa-rica) |
 | `Uvita-4.webp` | [Ballena Tales – Costa Ballena](https://ballenatales.com/es/condiciones-de-ensueno-en-costa-ballena/) |
+
+---
+
+## Videos
+
+Los videos utilizados en esta aplicación provienen de fuentes de libre uso.
+Licencia: [Pexels License](https://www.pexels.com/license/) — uso gratuito, sin atribución obligatoria.
+
+| Archivo | Destino | Fuente |
+|---------|---------|--------|
+| `tamarindo.mp4` | Tamarindo | [Pexels – buscar aquí](https://www.pexels.com/search/videos/tamarindo%20costa%20rica/) |
+| `rincon-vieja.mp4` | Rincón de la Vieja | [Pexels – buscar aquí](https://www.pexels.com/search/videos/rincon%20de%20la%20vieja/) |
+| `la-fortuna.mp4` | La Fortuna / Arenal | [Pexels – buscar aquí](https://www.pexels.com/search/videos/arenal%20volcano%20costa%20rica/) |
+| `cano-negro.mp4` | Caño Negro | [Pexels – buscar aquí](https://www.pexels.com/search/videos/costa%20rica%20wildlife/) |
+| `poas.mp4` | Volcán Poás | [Pexels – buscar aquí](https://www.pexels.com/search/videos/volcano%20costa%20rica/) |
+| `orosi.mp4` | Valle de Orosí | [Pexels – buscar aquí](https://www.pexels.com/search/videos/costa%20rica%20valley/) |
+| `cahuita.mp4` | Cahuita | [Pexels – buscar aquí](https://www.pexels.com/search/videos/caribbean%20costa%20rica/) |
+| `puerto-viejo.mp4` | Puerto Viejo | [Pexels – buscar aquí](https://www.pexels.com/search/videos/puerto%20viejo%20costa%20rica/) |
+| `manuel-antonio.mp4` | Manuel Antonio | [Pexels – buscar aquí](https://www.pexels.com/search/videos/manuel%20antonio/) |
+| `jaco.mp4` | Jacó | [Pexels – buscar aquí](https://www.pexels.com/search/videos/jaco%20beach%20costa%20rica/) |
+| `uvita.mp4` | Uvita | [Pexels – buscar aquí](https://www.pexels.com/search/videos/uvita%20costa%20rica/) |
+| `drake.mp4` | Bahía Drake | [Pexels – buscar aquí](https://www.pexels.com/search/videos/drake%20bay%20costa%20rica/) |
+| `tortuguero.mp4` | Tortuguero | [Pexels – buscar aquí](https://www.pexels.com/es-es/video/un-viaje-sereno-a-traves-del-bosque-de-manglares-30219147/) |

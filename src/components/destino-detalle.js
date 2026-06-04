@@ -284,10 +284,22 @@ class DestinoDetalle extends HTMLElement {
               <span class="icono" aria-hidden="true">&#127897;</span>
               Audio guía
             </div>
-            <audio-guia
+           <audio-guia
               src="${d.audio || ''}"
               label="${d.nombre ? 'Guía narrada de ' + d.nombre : ''}">
             </audio-guia>
+
+            ${d.video ? `
+            <div class="seccion-titulo" style="margin-top: 1.5rem;">
+              <span class="icono" aria-hidden="true">&#127909;</span>
+              Video del destino
+            </div>
+            <video-destino
+              src="${d.video}"
+              poster="${d.imagen_portada || ''}"
+              label="${d.nombre ? 'Video de ' + d.nombre : 'Video del destino'}">
+            </video-destino>
+            ` : ''}
           </div>
 
         </div>
