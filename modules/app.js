@@ -10,6 +10,7 @@ import '../components/mapa-interactivo.js';
 import '../components/destino-card.js';
 import '../components/galeria-imagenes.js';
 import '../components/audio-guia.js';
+import '../components/video-destino.js';
 import '../components/destino-detalle.js';
 
 // ── ESTADO GLOBAL ────────────────────────────────────────────────────────────
