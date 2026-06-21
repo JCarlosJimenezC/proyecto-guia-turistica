@@ -185,6 +185,20 @@ Anywhere Costa Rica. (2015). *Playa Herradura — Beach landscape* [Fotografía]
 
 ---
 
+### Parque Nacional Tortuguero (huetar-atlantica-003)
+
+[Parque Nacional Tortuguero — Canales] [Fotografía]. (s.f.). Namubak. https://cdn.shopify.com/s/files/1/0928/2220/8811/files/parque-nacional-tortuguero-national-park-namubak-costa-rica2.jpg?v=1749164280
+
+[Parque Nacional Tortuguero — Entrada al parque] [Fotografía]. (s.f.). Namubak. https://cdn.shopify.com/s/files/1/0928/2220/8811/files/parque-nacional-tortuguero-national-park-namubak-costa-rica4.jpg?v=1749164280
+
+[Parque Nacional Tortuguero — Vida silvestre] [Fotografía]. (s.f.). Namubak. https://cdn.shopify.com/s/files/1/0928/2220/8811/files/parque-nacional-tortuguero-national-park-namubak-costa-rica6.jpg?v=1749164280
+
+[Parque Nacional Tortuguero — Canales y vegetación] [Fotografía]. (s.f.). Namubak. https://cdn.shopify.com/s/files/1/0928/2220/8811/files/parque-nacional-tortuguero-national-park-namubak-costa-rica5.jpg?v=1749164280
+
+[Parque Nacional Tortuguero — Paisaje aéreo] [Fotografía]. (s.f.). Namubak. https://cdn.shopify.com/s/files/1/0928/2220/8811/files/parque-nacional-tortuguero-national-park-namubak-costa-rica_1.jpg?v=1749164485
+
+---
+
 ## Videos
 
 ### Videos descargados de YouTube — Región Chorotega
@@ -293,6 +307,7 @@ SpeechGen. (2026). *isla-cano-guia.mp3 — Audio guía turística Isla del Caño
 
 SpeechGen. (2026). *herradura-guia.mp3 — Audio guía turística Playa Herradura* [Archivo de audio]. Google Drive. https://drive.google.com/file/d/10EzuA-ta5zFqIx2bLUxkEYe4jkRFWIPY/view?usp=drive_link
 
+SpeechGen. (2026). *tortuguero-guia.mp3 — Audio guía turística Tortuguero* [Archivo de audio]. Google Drive. https://drive.google.com/file/d/1qZToeGuuOZT9j9Ez_tUQfblgVYLLc3Fo/view?usp=drive_link
 ---
 
 ## Fuentes turísticas generales consultadas
